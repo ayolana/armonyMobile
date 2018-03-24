@@ -1,0 +1,29 @@
+<ion-content padding class="transparent-header" [ngStyle]="{'background-image': 'url(' + backgroundImage +')'}">    
+  <ion-header no-border>
+    <ion-navbar transparent>
+    </ion-navbar>
+  </ion-header>
+  <div class="login-container">
+    <img class="logo" src="assets/img/logo/logo.png" />
+    <h2>Register</h2>
+    <ion-row>
+      <form [formGroup]="regisForm" (ngSubmit)="doRegister()" #registerForm="ngForm">                
+        <ion-item padding-right>
+          <ion-label>Nama</ion-label>
+          <ion-input type="text" formControlName="nameRegister" ></ion-input>                
+        </ion-item>
+        <ion-item padding-right>
+          <ion-label>Email</ion-label>
+          <ion-input type="text" formControlName="emailRegister" ></ion-input>                
+        </ion-item>
+        <ion-item padding-right>
+          <ion-label>Password</ion-label>
+          <ion-input type="password" formControlName="passwordRegister" ></ion-input>                
+        </ion-item>
+        <div>
+          <button ion-button class="submit-btn" full type="submit" [disabled]="!registerForm.form.valid">SIGN UP</button>
+        </div>
+      </form>
+    </ion-row>
+  </div>
+</ion-content>

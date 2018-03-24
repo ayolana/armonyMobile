@@ -1,0 +1,99 @@
+<ion-content class="transparent-header">
+  <ion-header>
+    <ion-navbar>
+    </ion-navbar>
+  </ion-header>
+  <ion-slides #slider  direction="vertical">
+      <ion-slide class="swiper-no-swiping">
+        <div padding>
+          <img class="logo" src="assets/img/logo/logo.png" width="100"/>
+          <ion-slides class="text-slider" autoplay="2000" loop="true">
+            <ion-slide>
+              <h3>Welcome to Shopair</h3>
+              <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+            </ion-slide>
+            <ion-slide>
+              <h3>Beautifull shop app</h3>
+              <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+            </ion-slide>
+            <ion-slide>
+              <h3>Easy to customized</h3>
+              <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+            </ion-slide>
+          </ion-slides>
+          <ion-row>
+            <ion-col col-6>
+              <button ion-button block color="primary" outline (click)="goToLogin()">Log in</button>
+            </ion-col>
+            <ion-col col-6>
+              <button ion-button block (click)="goToSignup()">Create Account</button>
+            </ion-col>
+          </ion-row>
+        </div>
+      </ion-slide>
+      <ion-slide class="zoom swiper-no-swiping">
+        <ion-slides #innerSlider class="content-slider">
+          <ion-slide class="swiper-no-swiping">
+            <div padding-left padding-right text-left>
+              <h1 padding-horizontal>Login</h1>
+              <ion-item padding-right>
+                <ion-label floating>Username</ion-label>
+                <ion-input type="text"></ion-input>
+              </ion-item>
+              <ion-item padding-right>
+                <ion-label floating>Password</ion-label>
+                <ion-input type="password"></ion-input>
+              </ion-item>
+              <div padding>
+                <button ion-button block (click)="login()">Login</button>
+                <button no-padding ion-button clear (click)="slideNext()" color="light">FORGOT PASSWORD?</button>
+              </div>
+              <button small clear text-left margin-top ion-button icon-right clear (click)="goToSignup()">
+                GO TO SIGNUP
+                <ion-icon end name="arrow-down"></ion-icon>
+              </button>
+            </div>
+          </ion-slide>
+          <ion-slide class="swiper-no-swiping">
+            <div padding>
+              <h1 text-left padding-horizontal>Forgot Password?</h1>
+              <p text-left padding-horizontal>We will send the confirmation link to reset your password.</p>
+              <ion-item padding-right>
+                <ion-label floating>E-mail</ion-label>
+                <ion-input type="email"></ion-input>
+              </ion-item>
+              <div padding>
+                <button ion-button block (click)="resetPassword()">RESET PASSWORD</button>
+                <button small ion-button icon-left float-left no-padding clear (click)="slidePrevious()" color="light"><ion-icon name="arrow-back"></ion-icon> GO BACK</button>
+              </div>
+            </div>
+          </ion-slide>
+        </ion-slides>
+      </ion-slide>
+      <ion-slide class="zoom swiper-no-swiping">
+        <div padding-left padding-right text-left>
+          <button small text-left margin-bottom ion-button icon-right clear (click)="goToLogin()">
+            GO TO LOGIN
+            <ion-icon end name="arrow-up"></ion-icon>
+          </button>
+          <h1 padding-horizontal>Create account</h1>
+          <p padding-horizontal>Lets join us to get tons of features.</p>
+          <ion-item padding-right>
+            <ion-label floating>Username</ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>
+          <ion-item padding-right>
+            <ion-label floating>Password</ion-label>
+            <ion-input type="password"></ion-input>
+          </ion-item>
+          <ion-item padding-right>
+            <ion-label floating>Confirm Password</ion-label>
+            <ion-input type="password"></ion-input>
+          </ion-item>
+          <div padding>
+            <button ion-button block (click)="signup()">SIGN UP</button>
+          </div>
+          </div>
+      </ion-slide>
+    </ion-slides>
+</ion-content>

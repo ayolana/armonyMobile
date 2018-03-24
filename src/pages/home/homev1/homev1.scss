@@ -1,0 +1,37 @@
+.theme-dark page-homev1{
+    ion-grid button{
+        background: transparent;
+        color: #fff;
+    }
+}
+page-homev1 {
+    
+    .col {
+        border-right: 1px solid #f2f2f2;
+        border-bottom: 1px solid #f2f2f2;   
+    }
+    .col:nth-child(3n){
+        border-right: none;
+    }
+    ion-icon{
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+    button{
+        background: #fff;
+        height: 110px;
+        font-weight: bold;
+        font-size: 11px;
+    }
+    
+    ion-slides{
+        height: 180px;
+    }
+    .slide-item{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: block;
+        height: 180px;
+    }
+}

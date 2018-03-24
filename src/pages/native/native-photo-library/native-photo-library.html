@@ -1,0 +1,25 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Native Photo Library</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <ion-grid class="form-container">
+      <ion-row>
+        <ion-col *ngFor="let item of showPhoto; let i = index" col-6 col-sm-4 col-md-6 col-lg-4 col-xl-2>
+          <img [src]="item.photoURL" />
+        </ion-col>
+      </ion-row>
+  </ion-grid>
+
+  <p> {{ successMessage }} </p>
+  <p> {{ errorMessage }} </p>
+
+</ion-content>

@@ -1,0 +1,23 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Native Camera</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  
+    This is my camera app :
+    <br>
+    <button ion-button block color="primary" (click)="takePicture()">Take a Picture</button>
+    <br>
+    Latest Picture:<br>
+    <img [src]="base64Image" *ngIf="base64Image" />
+    <br>
+    <p> {{ errorMessage }} </p>
+
+</ion-content>

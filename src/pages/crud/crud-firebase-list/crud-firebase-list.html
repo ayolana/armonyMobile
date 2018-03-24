@@ -1,0 +1,31 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>CRUD Firebase (Notes)</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="addNotes()" icon-only color="royal">
+        <ion-icon name="add"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+ 
+  <ion-list>
+    <ion-item-sliding *ngFor="let item of notesItems | async">
+      <ion-item (click)="editNotes($event, item)">
+        {{ item.title }}
+      </ion-item>
+      <ion-item-options side="right">
+        <button ion-button color="danger" icon-only (click)="deleteNotes(item.key)"><ion-icon name="trash"></ion-icon></button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+</ion-content>

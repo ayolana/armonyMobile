@@ -1,0 +1,32 @@
+<ion-header>
+    
+      <ion-navbar color="primary">
+        <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Firebase Upload File</ion-title>
+      </ion-navbar>
+    
+    </ion-header>
+    
+    
+    <ion-content padding>
+      <div *ngIf="loginStatus">
+          <button ion-button block color="primary" (click)="getMedia()" > Get Picture and Upload</button>          
+      </div>
+      <div *ngIf="!loginStatus">
+        Please Login Before Upload Your Profil Photo
+        <button ion-button block color="primary" (click)="itemTapped($event, 'FirebaseAuthPage')" > Login / Register</button>
+      </div>
+      <br>
+      <div  *ngIf="uploadedImage">
+          Uploaded Image : <Br>
+          <img [src]="uploadedImage" *ngIf="uploadedImage" />
+          <br>
+          <span *ngIf="uploadedImage">Image Url : {{ uploadedImage }}</span>
+      </div>
+
+    
+    
+    </ion-content>
+    

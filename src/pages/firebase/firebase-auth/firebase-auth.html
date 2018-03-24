@@ -1,0 +1,23 @@
+<ion-content class="transparent-header" [ngStyle]="{'background-image': 'url(' + backgroundImage +')'}">    
+  <ion-header no-border>
+    <ion-navbar transparent>
+    </ion-navbar>
+  </ion-header>
+  <div class="login-container">
+    <img class="logo" src="assets/img/logo/logo.png" />
+    <ion-row>
+      <ion-col text-center>
+        <h3>Welcome to Ionium 2</h3>
+        <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6>
+        <button ion-button block color="primary" outline (click)="goToLogin()">Log in</button>
+      </ion-col>
+      <ion-col col-6>
+        <button ion-button block (click)="goToSignup()">Create Account</button>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

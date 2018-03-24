@@ -1,0 +1,20 @@
+{
+    "BACK_BUTTON_TEXT": "वापस",
+    "TITLE": "सेटिंग",
+    "MENU": "मेन्यू",
+    "LOGOUT": "लोग आउट",
+
+    "Home":"घर",
+    "Components": "अवयव",
+    "CRUD": "CRUD",
+    "Forms": "रूपों",
+    "Firebase": "Firebase",
+    "Login" :"लॉग इन करें",
+    "Side Menu": "पक्ष",
+    "Miscellaneous": "कई तरह का",
+    "Native": "देशी",
+    "Profile": "प्रोफ़ाइल",
+    "Slides": "फिसल पट्टी",
+    "Setting": "सेटिंग"
+
+  }

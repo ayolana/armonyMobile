@@ -1,0 +1,21 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Native Geolocation</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  Real Time Location : {{ realTimeLocation }}
+
+  <button ion-button block color="primary" (click)="getLocation()"> Get Location </button>
+
+  <p> {{ successMessage }} </p>
+  <p> {{ errorMessage }} </p>
+  
+</ion-content>

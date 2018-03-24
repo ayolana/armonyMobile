@@ -1,0 +1,20 @@
+{
+    "BACK_BUTTON_TEXT": "Back",
+    "TITLE": "Setting",
+    "MENU": "Menu",
+    "LOGOUT": "Logout",
+
+    "Home": "Home",
+    "Components": "Components",
+    "CRUD": "CRUD",
+    "Forms": "Forms",
+    "Firebase": "Firebase",
+    "Login": "Login",
+    "Side Menu": "Side Menu",
+    "Miscellaneous": "Miscellaneous",
+    "Native": "Native",
+    "Profile": "Profile",
+    "Slides": "Slides",
+    "Setting": "Setting"
+
+  }

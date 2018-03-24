@@ -1,0 +1,20 @@
+{
+    "BACK_BUTTON_TEXT": "背部",
+    "TITLE": "设置",
+    "MENU": "菜单",
+    "LOGOUT": "登出",
+
+    "Home": "家",
+    "Components": "组件",
+    "CRUD": "CRUD",
+    "Forms": "形式",
+    "Firebase": "Firebase",
+    "Login": "登录",
+    "Side Menu": "侧菜单",
+    "Miscellaneous": "杂",
+    "Native": "本地人",
+    "Profile": "轮廓",
+    "Slides": "幻灯片",
+    "Setting": "设置"
+
+  }

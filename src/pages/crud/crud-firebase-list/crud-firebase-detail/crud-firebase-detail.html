@@ -1,0 +1,24 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <button menuToggle *ngIf="!selectedItem">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>CRUD Firebase Detail</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-item>
+    <ion-input type="text" [(ngModel)]="dataNotes.title" placeholder="New Note Title"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-textarea [(ngModel)]="dataNotes.text" placeholder="Your Text Here"></ion-textarea>
+  </ion-item>
+  <ion-col>
+    <button ion-button color="primary" (click)="saveNotes()">Save</button>
+    <button ion-button color="danger" (click)="back()">Back</button>
+  </ion-col>
+</ion-content>

@@ -1,0 +1,35 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title> Dashboard v1 </ion-title>
+  </ion-navbar>
+  
+</ion-header>
+
+<ion-content>
+  <ion-slides pager autoplay="1000" loop="true" speed="1000">
+    <ion-slide>
+      <div class="slide-item" style="background-image: url(assets/img/home/2.jpg)"></div>
+    </ion-slide>
+    <ion-slide>
+      <div class="slide-item" style="background-image: url(assets/img/home/3.jpg)"></div>
+    </ion-slide>
+    <ion-slide>
+      <div class="slide-item" style="background-image: url(assets/img/home/4.jpg)"></div>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let item of pages; let i = index" col-4 col-sm-4 col-md-6 col-lg-4 col-xl-2 text-center>
+        <button (click)="showList(item)" >
+          <ion-icon color="primary" name="{{ item.icon }}"></ion-icon> <br> {{ item.title }}
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

@@ -1,0 +1,37 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Native Instagram</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <button ion-button block color="primary" (click)="takePicture()"> Take Picture </button>
+  
+  <ion-card text-center>
+    <img [src]="taked_picture" />
+  </ion-card>
+
+  <div class="form-container" [hidden]="!has_taked_picture">
+    <ion-list>
+      <ion-item>
+        <ion-label stacked> Caption </ion-label>
+        <ion-input type="text" [value]="caption" [(ngModel)]="caption"></ion-input>
+      </ion-item>
+    </ion-list>
+    <div padding>
+      <button ion-button full color="secondary" (click)='shareImage();'>Share Image</button>
+    </div>
+  </div>
+  
+  <p> {{ errorMessageTP }} </p>
+  <p> {{ successMessageIG }} </p>
+  <p> {{ errorMessageIG }} </p>
+
+</ion-content>

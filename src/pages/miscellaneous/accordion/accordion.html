@@ -1,0 +1,32 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>accordion</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+    <ion-content>
+    
+      <ion-list>
+        <div *ngFor="let item of pages; let i = index">
+          <!-- First Level -->
+          <ion-item (click)="toggleSection(i)"  [ngClass]="{'section-active':item.open, 'section': item.open}">
+            <ion-icon color="primary" name="{{item.icon}}" item-start></ion-icon>
+              {{ item.title }}
+            <ion-icon name="arrow-forward" item-end *ngIf="!item.open"></ion-icon>
+            <ion-icon name="arrow-down" item-end *ngIf="item.open"></ion-icon>
+          </ion-item>
+
+          <ion-list *ngIf="item.children && item.open">
+              <!-- Second Level -->
+              <ion-item *ngFor="let child of item.children; let j = index" >
+                {{ child.title }}
+              </ion-item>
+          </ion-list>
+
+        </div>
+      </ion-list>
+      
+    </ion-content>

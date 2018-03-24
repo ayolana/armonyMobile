@@ -1,0 +1,84 @@
+page-login-slider {
+  .toolbar-background,
+  ion-navbar,
+  ion-header {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+  }
+  // Fullscreen centered image background
+  ion-content {
+    background: linear-gradient(316deg, #76CC81, #3E657A, #247BA0, #f53d3d, #39466B,#5973BF, #B2ABBF, #F3FFBD);
+    background-size: 1800% 1800%;
+    animation: rainbow 30s linear infinite;
+  }
+  @keyframes rainbow {
+    0% {
+      background-position: 0% 0%
+    }
+    50% {
+      background-position: 100% 100%
+    }
+    100% {
+      background-position: 0% 0%
+    }
+  }
+  // Slider
+  .content-slider {
+    ion-slides,
+    .swiper-container {
+      height: 100%;
+      width: auto;
+    }
+  }
+  .text-slider, .text-slider ion-slide, .text-slider .swiper-container {
+      height: 20vh !important;
+      width: auto;
+  }
+  .zoom .slide-zoom {
+    height: 100%;
+    margin-top: 35%;
+  }
+  // Content
+  .scroll-content {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .logo {
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 10%;
+  }
+  p{
+    font-size: 1.6rem;
+  }
+  span,
+  p,
+  h3,h1 {
+    color: white;
+  }
+
+  h1,h3{
+    font-weight: 300;
+  }
+  // Input items
+  ion-label[floating]{
+    color: #ccc;
+  }
+  ion-item {
+    border-radius: 3px !important;
+    margin-bottom: 5px !important;
+    color: #fff !important;
+    background-color: transparent !important;
+    font-size: 0.9em;
+  }
+  ion-input, ::-webkit-input-placeholder {
+    color: white !important;
+  }
+  .item-inner {
+    border-bottom: 2px solid white !important;
+    box-shadow: none !important;
+  }
+}

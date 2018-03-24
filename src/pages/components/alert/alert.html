@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Alert</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <button ion-button block color="primary" (click)="doBasicAlert()">Show Basic Alert</button>
+  <button ion-button block color="secondary" (click)="doPromptAlert()">Show Prompt Alert</button>
+  <button ion-button block color="danger" (click)="doConfirmationAlert()">Show Confirmation Alert</button>
+  <button ion-button block color="light" (click)="doRadioAlert()">Show Radio Alert</button>
+  <button ion-button block color="dark" (click)="doCheckboxAlert()">Show Checkbox Alert</button>
+
+</ion-content>

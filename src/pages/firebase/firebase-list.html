@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Firebase</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <div *ngFor="let item of items">
+      <div *ngIf="item.component == 'logout'">
+        <button ion-item (click)="doLogout($event)">
+          {{item.title}}
+        </button>
+      </div>
+      <div *ngIf="item.component != 'logout'">
+        <button ion-item (click)="itemTapped($event, item)">
+          {{item.title}}
+        </button>
+      </div>
+    </div>
+  </ion-list>
+</ion-content>

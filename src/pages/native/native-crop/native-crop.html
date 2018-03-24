@@ -1,0 +1,22 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Native Crop</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <button ion-button block color="primary" (click)="getMedia()" > Get Picture and Crop</button>
+  <br>
+  <img [src]="croped_image" *ngIf="croped_image" />
+  <p> {{ successMessage }} </p>
+  <p> {{ errorMessage }} </p>
+  <br>
+
+
+</ion-content>

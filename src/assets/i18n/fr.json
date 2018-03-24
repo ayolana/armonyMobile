@@ -1,0 +1,19 @@
+{
+    "BACK_BUTTON_TEXT": "Arrière",
+    "TITLE":"Réglage",
+    "MENU":"Menu",
+    "LOGOUT": "Connectez - Out",
+
+    "Home": "Home",
+    "Components": "Composants",
+    "CRUD": "CRUD",
+    "Forms": "Formulaires",
+    "Firebase": "Firebase",
+    "Login" : "S'identifier",
+    "Side Menu": "Menu latéral",
+    "Miscellaneous": "Divers",
+    "Native": "Originaire de",
+    "Profile": "Profil",
+    "Slides": "Diapositives",
+    "Setting": "Réglage"
+  }

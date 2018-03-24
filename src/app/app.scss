@@ -1,0 +1,188 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+.header-bg h3{
+  color: white !important;
+  position: relative;
+  z-index: 9;
+}
+.header-bg {
+    background-image: url(../assets/img/bg/1.jpg);
+    height: 200px;
+    background-size: contain;
+    background-position: center center;
+    background-color: white;
+    background-blend-mode: luminosity;
+}
+.header-bg img {
+    padding-top: 40px;
+    margin: 0 auto;
+    height: 100px;
+    display: block;
+    position: relative;
+    z-index: 9;
+    max-width: 60px;
+}
+.header-bg::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    background: #a56be4;
+    background: linear-gradient(to left, #a56be4 0%, #a56be4 100%);
+}
+
+.button-inner{
+  height: auto !important;
+}
+
+@import '../theme/animations';
+@import '../theme/dark.theme';
+@import '../theme/light.theme';
+.align-center {
+  text-align: center;
+}
+
+.highlight {
+  background-color: #f4f4f4;
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+}
+
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.top-radius {
+  border-radius: 10% 10% 0 0;
+}
+
+.bottom-radius {
+  border-radius: 0 0 10% 10%;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.transparent-header {
+  // This is just to make the header transparent and button/icon with white color
+  .toolbar-content,
+  .back-button {
+    color: white;
+  }
+  .toolbar-background,
+  ion-navbar,
+  ion-header {
+    background: transparent !important;
+    background-color: transparent !important;
+  }
+  .header-md::after,
+  .toolbar-background-ios {
+    background-image: none;
+    border-bottom: 0;
+  }
+  .header-ios .toolbar-background-ios,
+  .footer-ios .toolbar-background-ios {
+    border: 0;
+  }
+  // ---
+}
+
+.icon-badge {
+  top: 0px;
+  right: 0px;
+  background: #FF5D5D;
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  padding: 5px 8px;
+  border-radius: 15px;
+}
+
+// Sidemenu with avatar
+#menu-avatar {
+  .user-avatar {
+    padding: .5em;
+  }
+  .label {
+    color: white;
+    font-weight: bold;
+  }
+  .name {
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 3px;
+  }
+  .e-mail {
+    color: white;
+    font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .item {
+    background: transparent;
+  }
+  ion-content {
+    background: linear-gradient(48deg, rgba(157, 72, 173, 0.8) 0%, rgba(157, 72, 173, 0.86) 28%, rgba(0, 168, 168, 0.98) 93%, rgba(0, 168, 168, 1) 100%);
+  }
+  .menu-inner {
+    background: rgba(255, 255, 255, .3);
+  }
+}
+
+// Material Design Sidemenu
+#menu-material {
+  .menu-header {
+    padding: 5px 15px;
+    background-image: url('../assets/img/misc/material-design-background.jpg');
+    background-size: cover;
+    color: white;
+    .name {
+      font-weight: 500;
+      margin-bottom: 3px;
+    }
+    .e-mail {
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+  }
+  .user-avatar {
+    padding: .5em;
+    height: 12vh;
+  }
+  h3,
+  .label,
+  {
+    color: #999;
+    font-weight: 400;
+  }
+  ion-icon {
+    color: #777;
+  }
+}

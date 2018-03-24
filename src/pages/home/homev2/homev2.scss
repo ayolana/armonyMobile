@@ -1,0 +1,30 @@
+page-homev2 {
+    
+    .col {
+        border-right: 1px solid #f2f2f2;
+        border-bottom: 1px solid #f2f2f2;   
+    }
+    .col:nth-child(3){
+        border-right: none;
+    }
+    ion-icon{
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+    button{
+        background: #fff;
+        height: 110px;
+        font-weight: bold;
+        font-size: 11px;
+    }
+    ion-slides{
+        height: 160px;
+    }
+    .slide-item{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: block;
+        height: 160px;
+    }
+}
