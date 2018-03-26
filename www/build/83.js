@@ -1,6 +1,6 @@
 webpackJsonp([83],{
 
-/***/ 1122:
+/***/ 1123:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -27,7 +27,7 @@ var ModalsPage = /** @class */ (function () {
         modal.present();
     };
     ModalsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"/Applications/XAMPP/xamppfiles/htdocs/codegate/app/src/pages/components/modals/modals.html"*/'<ion-header>\n\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Modals</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <ion-list>\n    <ion-list-header>\n      Hobbits\n    </ion-list-header>\n    <a ion-item (click)="openModal({charNum: 0})">\n      Gollum\n    </a>\n    <a ion-item (click)="openModal({charNum: 1})">\n      Frodo Baggins\n    </a>\n    <a ion-item (click)="openModal({charNum: 2})">\n      Sam\n    </a>\n  </ion-list>\n\n</ion-content>'/*ion-inline-end:"/Applications/XAMPP/xamppfiles/htdocs/codegate/app/src/pages/components/modals/modals.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"/Applications/XAMPP/xamppfiles/htdocs/codegate/mobileApp/src/pages/components/modals/modals.html"*/'<ion-header>\n\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Modals</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <ion-list>\n    <ion-list-header>\n      Hobbits\n    </ion-list-header>\n    <a ion-item (click)="openModal({charNum: 0})">\n      Gollum\n    </a>\n    <a ion-item (click)="openModal({charNum: 1})">\n      Frodo Baggins\n    </a>\n    <a ion-item (click)="openModal({charNum: 2})">\n      Sam\n    </a>\n  </ion-list>\n\n</ion-content>'/*ion-inline-end:"/Applications/XAMPP/xamppfiles/htdocs/codegate/mobileApp/src/pages/components/modals/modals.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ModalController */]])
     ], ModalsPage);
@@ -38,7 +38,7 @@ var ModalsPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 872:
+/***/ 873:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -46,7 +46,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ModalsPageModule", function() { return ModalsPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(57);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modals__ = __webpack_require__(1122);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modals__ = __webpack_require__(1123);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);

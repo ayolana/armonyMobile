@@ -376,9 +376,9 @@ var FirebaseAuthProvider = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__ionic_native_splash_screen__ = __webpack_require__(450);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__ionic_native_status_bar__ = __webpack_require__(451);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__ionic_native_action_sheet__ = __webpack_require__(856);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__ionic_native_app_rate__ = __webpack_require__(465);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__ionic_native_app_rate__ = __webpack_require__(464);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__ionic_native_camera__ = __webpack_require__(454);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__ionic_native_call_number__ = __webpack_require__(464);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__ionic_native_call_number__ = __webpack_require__(465);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__ionic_native_crop__ = __webpack_require__(466);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__ionic_native_date_picker__ = __webpack_require__(467);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__ionic_native_email_composer__ = __webpack_require__(468);
@@ -592,19 +592,19 @@ var map = {
 		86
 	],
 	"../pages/components/fab/fab.module": [
-		871,
+		870,
 		85
 	],
 	"../pages/components/modals/modalpopup/modalpopup.module": [
-		870,
+		871,
 		84
 	],
 	"../pages/components/modals/modals.module": [
-		872,
+		873,
 		83
 	],
 	"../pages/components/popovers/popovers.module": [
-		873,
+		872,
 		82
 	],
 	"../pages/components/popovers/show-popover/show-popover.module": [
@@ -616,11 +616,11 @@ var map = {
 		80
 	],
 	"../pages/components/segment/segment.module": [
-		877,
+		876,
 		79
 	],
 	"../pages/components/toast/toast.module": [
-		876,
+		877,
 		78
 	],
 	"../pages/crud/crud-firebase-list/crud-firebase-detail/crud-firebase-detail.module": [
@@ -628,11 +628,11 @@ var map = {
 		77
 	],
 	"../pages/crud/crud-firebase-list/crud-firebase-list.module": [
-		880,
+		879,
 		76
 	],
 	"../pages/crud/crud-http-list/crud-http-detail/crud-http-detail.module": [
-		879,
+		880,
 		75
 	],
 	"../pages/crud/crud-http-list/crud-http-list.module": [
@@ -796,11 +796,11 @@ var map = {
 		37
 	],
 	"../pages/native/native-app-rate/native-app-rate.module": [
-		922,
+		921,
 		36
 	],
 	"../pages/native/native-call-number/native-call-number.module": [
-		921,
+		922,
 		35
 	],
 	"../pages/native/native-camera/native-camera.module": [
@@ -876,23 +876,23 @@ var map = {
 		17
 	],
 	"../pages/setting/setting-list.module": [
-		943,
+		941,
 		16
 	],
 	"../pages/setting/theming/theming.module": [
-		941,
+		942,
 		15
 	],
 	"../pages/side-menu/side-menu.module": [
-		942,
+		943,
 		14
 	],
 	"../pages/slide/slide-carousel/slide-carousel.module": [
-		945,
+		944,
 		13
 	],
 	"../pages/slide/slide-color-changing/slide-color-changing.module": [
-		944,
+		945,
 		12
 	],
 	"../pages/slide/slide-free-mode/slide-free-mode.module": [
@@ -1389,17 +1389,17 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/components/checkbox/checkbox.module#CheckboxPageModule', name: 'CheckboxPage', segment: 'checkbox', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/components/components.module#ComponentListPageModule', name: 'ComponentListPage', segment: 'components', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/components/datetime/datetime.module#DatetimePageModule', name: 'DatetimePage', segment: 'datetime', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/components/modals/modalpopup/modalpopup.module#ModalContentPageModule', name: 'ModalContentPage', segment: 'modalpopup', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/components/fab/fab.module#FabPageModule', name: 'FabPage', segment: 'fab', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/components/modals/modals.module#ModalsPageModule', name: 'ModalsPage', segment: 'modals', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/components/modals/modalpopup/modalpopup.module#ModalContentPageModule', name: 'ModalContentPage', segment: 'modalpopup', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/components/popovers/popovers.module#PopoversPageModule', name: 'PopoversPage', segment: 'popovers', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/components/modals/modals.module#ModalsPageModule', name: 'ModalsPage', segment: 'modals', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/components/popovers/show-popover/show-popover.module#ShowPopoverPageModule', name: 'ShowPopoverPage', segment: 'show-popover', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/components/searchbar/searchbar.module#SearchbarPageModule', name: 'SearchbarPage', segment: 'searchbar', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/components/toast/toast.module#ToastPageModule', name: 'ToastPage', segment: 'toast', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/components/segment/segment.module#SegmentPageModule', name: 'SegmentPage', segment: 'segment', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/components/toast/toast.module#ToastPageModule', name: 'ToastPage', segment: 'toast', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/crud/crud-firebase-list/crud-firebase-detail/crud-firebase-detail.module#CrudFirebaseDetailPageModule', name: 'CrudFirebaseDetailPage', segment: 'crud-firebase-detail', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/crud/crud-http-list/crud-http-detail/crud-http-detail.module#CrudHttpDetailPageModule', name: 'CrudHttpDetailPage', segment: 'crud-http-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/crud/crud-firebase-list/crud-firebase-list.module#CrudFirebaseListPageModule', name: 'CrudFirebaseListPage', segment: 'crud-firebase-list', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/crud/crud-http-list/crud-http-detail/crud-http-detail.module#CrudHttpDetailPageModule', name: 'CrudHttpDetailPage', segment: 'crud-http-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/crud/crud-http-list/crud-http-list.module#CrudHttpListPageModule', name: 'CrudHttpListPage', segment: 'crud-http-list', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/crud/crud-storage-list/crud-storage-detail/crud-storage-detail.module#CrudStorageDetailPageModule', name: 'CrudStorageDetailPage', segment: 'crud-storage-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/crud/crud-storage-list/crud-storage-list.module#CrudStorageListPageModule', name: 'CrudStorageListPage', segment: 'crud-storage-list', priority: 'low', defaultHistory: [] },
@@ -1440,8 +1440,8 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/miscellaneous/timeline/timeline.module#TimelinePageModule', name: 'TimelinePage', segment: 'timeline', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/miscellaneous/tinder-cards/tinder-cards.module#TinderCardsPageModule', name: 'TinderCardsPage', segment: 'tinder-cards', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/native/native-action-sheet/native-action-sheet.module#NativeActionSheetPageModule', name: 'NativeActionSheetPage', segment: 'native-action-sheet', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/native/native-call-number/native-call-number.module#NativeCallNumberPageModule', name: 'NativeCallNumberPage', segment: 'native-call-number', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/native/native-app-rate/native-app-rate.module#NativeAppRatePageModule', name: 'NativeAppRatePage', segment: 'native-app-rate', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/native/native-call-number/native-call-number.module#NativeCallNumberPageModule', name: 'NativeCallNumberPage', segment: 'native-call-number', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/native/native-camera/native-camera.module#NativeCameraPageModule', name: 'NativeCameraPage', segment: 'native-camera', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/native/native-crop/native-crop.module#NativeCropPageModule', name: 'NativeCropPage', segment: 'native-crop', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/native/native-date-picker/native-date-picker.module#NativeDatePickerPageModule', name: 'NativeDatePickerPage', segment: 'native-date-picker', priority: 'low', defaultHistory: [] },
@@ -1460,11 +1460,11 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/profile/profile-three/profile-three.module#ProfileThreePageModule', name: 'ProfileThreePage', segment: 'profile-three', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/profile/profile.module#ProfileListPageModule', name: 'ProfileListPage', segment: 'profile', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/setting/language/language.module#LanguagePageModule', name: 'LanguagePage', segment: 'language', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/setting/setting-list.module#SettingListPageModule', name: 'SettingListPage', segment: 'setting-list', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/setting/theming/theming.module#ThemingPageModule', name: 'ThemingPage', segment: 'theming', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/side-menu/side-menu.module#SideMenuPageModule', name: 'SideMenuPage', segment: 'side-menu', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/setting/setting-list.module#SettingListPageModule', name: 'SettingListPage', segment: 'setting-list', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/slide/slide-color-changing/slide-color-changing.module#SlideColorChangingPageModule', name: 'SlideColorChangingPage', segment: 'slide-color-changing', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/slide/slide-carousel/slide-carousel.module#SlideCarouselPageModule', name: 'SlideCarouselPage', segment: 'slide-carousel', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/slide/slide-color-changing/slide-color-changing.module#SlideColorChangingPageModule', name: 'SlideColorChangingPage', segment: 'slide-color-changing', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/slide/slide-free-mode/slide-free-mode.module#SlideFreeModePageModule', name: 'SlideFreeModePage', segment: 'slide-free-mode', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/slide/slide-ionic/slide.module#SlidePageModule', name: 'SlidePage', segment: 'slide', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/slide/slide-nested/slide-nested.module#SlideNestedPageModule', name: 'SlideNestedPage', segment: 'slide-nested', priority: 'low', defaultHistory: [] },
@@ -1633,7 +1633,7 @@ var Timer = /** @class */ (function () {
     ], Timer.prototype, "timeInSeconds", void 0);
     Timer = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'timer',template:/*ion-inline-start:"/Applications/XAMPP/xamppfiles/htdocs/codegate/app/src/components/countdown-timer/timer.html"*/'<ion-card *ngIf="timer">\n	<ion-card-header>\n		<button ion-button *ngIf="timeInSeconds && timeInSeconds > 0" large block clear class="timer-button x-large">{{timer.displayTime}}</button>\n		<button ion-button *ngIf="!timeInSeconds || timeInSeconds == 0" large block clear class="timer-button">Timer set up incorrectly</button>\n	</ion-card-header>\n	<ion-item *ngIf="timeInSeconds && timeInSeconds > 0">\n		<button ion-button clear class="large" color="danger" (click)="initTimer()" item-start *ngIf="!timer.runTimer && (timer.hasStarted || timer.hasFinished) || timer.hasFinished">\n            <ion-icon name="refresh"></ion-icon>\n            Restart\n        </button>\n		<button ion-button clear class="large" (click)="pauseTimer()" item-end *ngIf="timer.runTimer && timer.hasStarted && !timer.hasFinished">\n            <ion-icon name="pause"></ion-icon>\n            Pause\n        </button>\n		<button ion-button clear class="large" (click)="resumeTimer()" item-end *ngIf="!timer.runTimer && timer.hasStarted && !timer.hasFinished">\n            <ion-icon name="play"></ion-icon>\n            Resume\n        </button>\n		<button ion-button clear class="large" (click)="startTimer()" item-end *ngIf="!timer.hasStarted">\n            <ion-icon name="play"></ion-icon>\n            Start\n        </button>\n	</ion-item>\n</ion-card>\n'/*ion-inline-end:"/Applications/XAMPP/xamppfiles/htdocs/codegate/app/src/components/countdown-timer/timer.html"*/
+            selector: 'timer',template:/*ion-inline-start:"/Applications/XAMPP/xamppfiles/htdocs/codegate/mobileApp/src/components/countdown-timer/timer.html"*/'<ion-card *ngIf="timer">\n	<ion-card-header>\n		<button ion-button *ngIf="timeInSeconds && timeInSeconds > 0" large block clear class="timer-button x-large">{{timer.displayTime}}</button>\n		<button ion-button *ngIf="!timeInSeconds || timeInSeconds == 0" large block clear class="timer-button">Timer set up incorrectly</button>\n	</ion-card-header>\n	<ion-item *ngIf="timeInSeconds && timeInSeconds > 0">\n		<button ion-button clear class="large" color="danger" (click)="initTimer()" item-start *ngIf="!timer.runTimer && (timer.hasStarted || timer.hasFinished) || timer.hasFinished">\n            <ion-icon name="refresh"></ion-icon>\n            Restart\n        </button>\n		<button ion-button clear class="large" (click)="pauseTimer()" item-end *ngIf="timer.runTimer && timer.hasStarted && !timer.hasFinished">\n            <ion-icon name="pause"></ion-icon>\n            Pause\n        </button>\n		<button ion-button clear class="large" (click)="resumeTimer()" item-end *ngIf="!timer.runTimer && timer.hasStarted && !timer.hasFinished">\n            <ion-icon name="play"></ion-icon>\n            Resume\n        </button>\n		<button ion-button clear class="large" (click)="startTimer()" item-end *ngIf="!timer.hasStarted">\n            <ion-icon name="play"></ion-icon>\n            Start\n        </button>\n	</ion-item>\n</ion-card>\n'/*ion-inline-end:"/Applications/XAMPP/xamppfiles/htdocs/codegate/mobileApp/src/components/countdown-timer/timer.html"*/
         })
     ], Timer);
     return Timer;
@@ -1748,7 +1748,7 @@ var TimerProgress = /** @class */ (function () {
     ], TimerProgress.prototype, "timeInSeconds", void 0);
     TimerProgress = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'timer-progress',template:/*ion-inline-start:"/Applications/XAMPP/xamppfiles/htdocs/codegate/app/src/components/timer-progress/timer-progress.html"*/'<ion-card *ngIf="timer">\n	<ion-card-header>\n         <div class="radial-progress" data-progress="0">\n            <div class="circle">\n                <div class="mask full" [style.transform]="transform">\n                <div class="fill" [style.transform]="transform"></div>\n                </div>\n                <div class="mask half">\n                <div class="fill" [style.transform]="transform"></div>\n                <div class="fill fix" [style.transform]="fixTransform"></div>\n                </div>\n                <div class="shadow"></div>\n            </div>\n            <div class="inset">\n                <div class="percentage">{{timer.displayTime}}</div>\n            </div>\n        </div>\n		<button ion-button *ngIf="!timeInSeconds || timeInSeconds == 0" large block clear class="timer-button">Timer set up incorrectly</button>\n	</ion-card-header>\n	<ion-item *ngIf="timeInSeconds && timeInSeconds > 0">\n		<button ion-button clear class="large" color="danger" (click)="initTimer()" item-start *ngIf="!timer.runTimer && (timer.hasStarted || timer.hasFinished) || timer.hasFinished">\n            <ion-icon name="refresh"></ion-icon>\n            Restart\n        </button>\n		<button ion-button clear class="large" (click)="pauseTimer()" item-end *ngIf="timer.runTimer && timer.hasStarted && !timer.hasFinished">\n            <ion-icon name="pause"></ion-icon>\n            Pause\n        </button>\n		<button ion-button clear class="large" (click)="resumeTimer()" item-end *ngIf="!timer.runTimer && timer.hasStarted && !timer.hasFinished">\n            <ion-icon name="play"></ion-icon>\n            Resume\n        </button>\n		<button ion-button clear class="large" (click)="startTimer()" item-end *ngIf="!timer.hasStarted">\n            <ion-icon name="play"></ion-icon>\n            Start\n        </button>\n	</ion-item>\n</ion-card>\n'/*ion-inline-end:"/Applications/XAMPP/xamppfiles/htdocs/codegate/app/src/components/timer-progress/timer-progress.html"*/
+            selector: 'timer-progress',template:/*ion-inline-start:"/Applications/XAMPP/xamppfiles/htdocs/codegate/mobileApp/src/components/timer-progress/timer-progress.html"*/'<ion-card *ngIf="timer">\n	<ion-card-header>\n         <div class="radial-progress" data-progress="0">\n            <div class="circle">\n                <div class="mask full" [style.transform]="transform">\n                <div class="fill" [style.transform]="transform"></div>\n                </div>\n                <div class="mask half">\n                <div class="fill" [style.transform]="transform"></div>\n                <div class="fill fix" [style.transform]="fixTransform"></div>\n                </div>\n                <div class="shadow"></div>\n            </div>\n            <div class="inset">\n                <div class="percentage">{{timer.displayTime}}</div>\n            </div>\n        </div>\n		<button ion-button *ngIf="!timeInSeconds || timeInSeconds == 0" large block clear class="timer-button">Timer set up incorrectly</button>\n	</ion-card-header>\n	<ion-item *ngIf="timeInSeconds && timeInSeconds > 0">\n		<button ion-button clear class="large" color="danger" (click)="initTimer()" item-start *ngIf="!timer.runTimer && (timer.hasStarted || timer.hasFinished) || timer.hasFinished">\n            <ion-icon name="refresh"></ion-icon>\n            Restart\n        </button>\n		<button ion-button clear class="large" (click)="pauseTimer()" item-end *ngIf="timer.runTimer && timer.hasStarted && !timer.hasFinished">\n            <ion-icon name="pause"></ion-icon>\n            Pause\n        </button>\n		<button ion-button clear class="large" (click)="resumeTimer()" item-end *ngIf="!timer.runTimer && timer.hasStarted && !timer.hasFinished">\n            <ion-icon name="play"></ion-icon>\n            Resume\n        </button>\n		<button ion-button clear class="large" (click)="startTimer()" item-end *ngIf="!timer.hasStarted">\n            <ion-icon name="play"></ion-icon>\n            Start\n        </button>\n	</ion-item>\n</ion-card>\n'/*ion-inline-end:"/Applications/XAMPP/xamppfiles/htdocs/codegate/mobileApp/src/components/timer-progress/timer-progress.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["c" /* DomSanitizer */]])
     ], TimerProgress);
@@ -1819,7 +1819,7 @@ var ExpandableHeader = /** @class */ (function () {
     ], ExpandableHeader.prototype, "headerHeight", void 0);
     ExpandableHeader = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'expandable-header',template:/*ion-inline-start:"/Applications/XAMPP/xamppfiles/htdocs/codegate/app/src/components/expandable-header/expandable-header.html"*/'<ng-content></ng-content>\n'/*ion-inline-end:"/Applications/XAMPP/xamppfiles/htdocs/codegate/app/src/components/expandable-header/expandable-header.html"*/,
+            selector: 'expandable-header',template:/*ion-inline-start:"/Applications/XAMPP/xamppfiles/htdocs/codegate/mobileApp/src/components/expandable-header/expandable-header.html"*/'<ng-content></ng-content>\n'/*ion-inline-end:"/Applications/XAMPP/xamppfiles/htdocs/codegate/mobileApp/src/components/expandable-header/expandable-header.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"], __WEBPACK_IMPORTED_MODULE_0__angular_core__["Renderer"]])
     ], ExpandableHeader);
@@ -1875,7 +1875,7 @@ var FlashCardComponent = /** @class */ (function () {
     ], FlashCardComponent.prototype, "fcBack", void 0);
     FlashCardComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'flash-card',template:/*ion-inline-start:"/Applications/XAMPP/xamppfiles/htdocs/codegate/app/src/components/flash-card/flash-card.html"*/'<ion-card class="fc-container" (click)="toggle()" [class.fc-back]="toggled" #fcContainer>\n    <div class="front" #front>\n        <ng-content class="" select=".fc-front"></ng-content>\n    </div>\n \n    <div class="back" #back>\n        <ng-content select=".fc-back"></ng-content>\n    </div>\n</ion-card>'/*ion-inline-end:"/Applications/XAMPP/xamppfiles/htdocs/codegate/app/src/components/flash-card/flash-card.html"*/
+            selector: 'flash-card',template:/*ion-inline-start:"/Applications/XAMPP/xamppfiles/htdocs/codegate/mobileApp/src/components/flash-card/flash-card.html"*/'<ion-card class="fc-container" (click)="toggle()" [class.fc-back]="toggled" #fcContainer>\n    <div class="front" #front>\n        <ng-content class="" select=".fc-front"></ng-content>\n    </div>\n \n    <div class="back" #back>\n        <ng-content select=".fc-back"></ng-content>\n    </div>\n</ion-card>'/*ion-inline-end:"/Applications/XAMPP/xamppfiles/htdocs/codegate/mobileApp/src/components/flash-card/flash-card.html"*/
         })
     ], FlashCardComponent);
     return FlashCardComponent;
@@ -1913,7 +1913,7 @@ var TimelineComponent = /** @class */ (function () {
     ], TimelineComponent.prototype, "endIcon", void 0);
     TimelineComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'timeline',template:/*ion-inline-start:"/Applications/XAMPP/xamppfiles/htdocs/codegate/app/src/components/timeline/timeline.html"*/'<div class="timeline">\n  <ng-content></ng-content>\n\n  <timeline-item>\n    <ion-icon class="" [name]="endIcon"></ion-icon>\n  </timeline-item>\n\n</div>\n'/*ion-inline-end:"/Applications/XAMPP/xamppfiles/htdocs/codegate/app/src/components/timeline/timeline.html"*/
+            selector: 'timeline',template:/*ion-inline-start:"/Applications/XAMPP/xamppfiles/htdocs/codegate/mobileApp/src/components/timeline/timeline.html"*/'<div class="timeline">\n  <ng-content></ng-content>\n\n  <timeline-item>\n    <ion-icon class="" [name]="endIcon"></ion-icon>\n  </timeline-item>\n\n</div>\n'/*ion-inline-end:"/Applications/XAMPP/xamppfiles/htdocs/codegate/mobileApp/src/components/timeline/timeline.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], TimelineComponent);
@@ -2203,7 +2203,7 @@ var MyApp = /** @class */ (function () {
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* Nav */])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"/Applications/XAMPP/xamppfiles/htdocs/codegate/app/src/app/app.html"*/'\n<div class="{{global.state[\'theme\']}}">\n  <!--Default Menu-->\n  <ion-menu [content]="content" id="menu-components">\n    <ion-header color="primary">\n      <ion-toolbar>\n        <ion-title> {{ \'MENU\' | translate }} </ion-title>\n      </ion-toolbar>\n    </ion-header>\n    <ion-content>\n      <ion-list>\n        <button menuClose ion-item *ngFor="let p of pages" [class.highlight]="p.active" (click)="openPage(p)">\n        {{ p.title | translate }}\n      </button>\n      <button *ngIf="isLogin" menuClose="left" ion-item detail-none (click)="doLogout()">\n        {{ \'LOGOUT\' | translate}}\n      </button>\n      </ion-list>\n    </ion-content>\n  </ion-menu>\n  <!--Side Menu with avatar-->\n  <ion-menu [content]="content" id="menu-avatar">\n    <ion-content>\n      <div #header>\n        <ion-row style="align-items:center;">\n          <ion-col col-3>\n            <img src="assets/icon/icon-email.svg" />\n            <span class="icon-badge">4</span>\n          </ion-col>\n          <ion-col col-6>\n            <img class="user-avatar round" [src]="userData.photo || placeholder" onerror="this.src=\'assets/img/logo/logo.png\'"\n            />\n          </ion-col>\n          <ion-col col-3>\n            <img src="assets/icon/icon-calendar.svg" />\n          </ion-col>\n        </ion-row>\n        <div style="text-align: center;">\n          <p class="name">{{ userData.name  }}</p>\n          <p class="e-mail">{{ userData.email  }}</p>       \n        </div>\n      </div>\n      <ion-list no-lines>\n        <button menuClose ion-item detail-none *ngFor="let p of pages" (click)="openPage(p)">\n          <!--<ion-icon [name]="p.icon" item-left></ion-icon>-->\n          {{ p.title | translate }}\n        </button>\n        <button *ngIf="isLogin" menuClose="left" ion-item detail-none (click)="doLogout()">\n          {{ \'LOGOUT\' | translate}}\n        </button>\n      </ion-list>\n    </ion-content>\n  </ion-menu>\n  <!--Material Design Menu-->\n  <ion-menu [content]="content" id="menu-material">\n    <ion-content>\n      <div class="menu-header">\n        <!--material-design-background-->\n        <img class="user-avatar round" [src]="userData.photo  || placeholder" onerror="this.src=\'assets/img/logo/logo.png\'"/>\n        <p class="name">{{ userData.name  }}</p>\n        <p class="e-mail">{{ userData.email  }}</p>\n      </div>\n      <ion-list no-lines>\n        <button menuClose="left" ion-item detail-none *ngFor="let p of pages" (click)="openPage(p)">\n          <ion-icon [name]="p.icon" item-left></ion-icon>\n          {{p.title | translate}}\n        </button>\n        <button *ngIf="isLogin" menuClose="left" ion-item detail-none (click)="doLogout()">\n            <ion-icon tem-left></ion-icon>\n            {{ \'LOGOUT\' | translate}}\n          </button>\n      </ion-list>\n    </ion-content>\n  </ion-menu>\n\n  <!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n  <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n</div>\n'/*ion-inline-end:"/Applications/XAMPP/xamppfiles/htdocs/codegate/app/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"/Applications/XAMPP/xamppfiles/htdocs/codegate/mobileApp/src/app/app.html"*/'\n<div class="{{global.state[\'theme\']}}">\n  <!--Default Menu-->\n  <ion-menu [content]="content" id="menu-components">\n    <ion-header color="primary">\n      <ion-toolbar>\n        <ion-title> {{ \'MENU\' | translate }} </ion-title>\n      </ion-toolbar>\n    </ion-header>\n    <ion-content>\n      <ion-list>\n        <button menuClose ion-item *ngFor="let p of pages" [class.highlight]="p.active" (click)="openPage(p)">\n        {{ p.title | translate }}\n      </button>\n      <button *ngIf="isLogin" menuClose="left" ion-item detail-none (click)="doLogout()">\n        {{ \'LOGOUT\' | translate}}\n      </button>\n      </ion-list>\n    </ion-content>\n  </ion-menu>\n  <!--Side Menu with avatar-->\n  <ion-menu [content]="content" id="menu-avatar">\n    <ion-content>\n      <div #header>\n        <ion-row style="align-items:center;">\n          <ion-col col-3>\n            <img src="assets/icon/icon-email.svg" />\n            <span class="icon-badge">4</span>\n          </ion-col>\n          <ion-col col-6>\n            <img class="user-avatar round" [src]="userData.photo || placeholder" onerror="this.src=\'assets/img/logo/logo.png\'"\n            />\n          </ion-col>\n          <ion-col col-3>\n            <img src="assets/icon/icon-calendar.svg" />\n          </ion-col>\n        </ion-row>\n        <div style="text-align: center;">\n          <p class="name">{{ userData.name  }}</p>\n          <p class="e-mail">{{ userData.email  }}</p>       \n        </div>\n      </div>\n      <ion-list no-lines>\n        <button menuClose ion-item detail-none *ngFor="let p of pages" (click)="openPage(p)">\n          <!--<ion-icon [name]="p.icon" item-left></ion-icon>-->\n          {{ p.title | translate }}\n        </button>\n        <button *ngIf="isLogin" menuClose="left" ion-item detail-none (click)="doLogout()">\n          {{ \'LOGOUT\' | translate}}\n        </button>\n      </ion-list>\n    </ion-content>\n  </ion-menu>\n  <!--Material Design Menu-->\n  <ion-menu [content]="content" id="menu-material">\n    <ion-content>\n      <div class="menu-header">\n        <!--material-design-background-->\n        <img class="user-avatar round" [src]="userData.photo  || placeholder" onerror="this.src=\'assets/img/logo/logo.png\'"/>\n        <p class="name">{{ userData.name  }}</p>\n        <p class="e-mail">{{ userData.email  }}</p>\n      </div>\n      <ion-list no-lines>\n        <button menuClose="left" ion-item detail-none *ngFor="let p of pages" (click)="openPage(p)">\n          <ion-icon [name]="p.icon" item-left></ion-icon>\n          {{p.title | translate}}\n        </button>\n        <button *ngIf="isLogin" menuClose="left" ion-item detail-none (click)="doLogout()">\n            <ion-icon tem-left></ion-icon>\n            {{ \'LOGOUT\' | translate}}\n          </button>\n      </ion-list>\n    </ion-content>\n  </ion-menu>\n\n  <!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n  <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n</div>\n'/*ion-inline-end:"/Applications/XAMPP/xamppfiles/htdocs/codegate/mobileApp/src/app/app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Events */],

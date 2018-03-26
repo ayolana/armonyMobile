@@ -1,6 +1,6 @@
 webpackJsonp([14],{
 
-/***/ 1274:
+/***/ 1275:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -38,7 +38,7 @@ var SideMenuPage = /** @class */ (function () {
     };
     SideMenuPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-side-menu',template:/*ion-inline-start:"/Applications/XAMPP/xamppfiles/htdocs/codegate/app/src/pages/side-menu/side-menu.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-buttons left>\n      <button ion-button icon-only menuToggle="left">\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Side Menu</ion-title>\n    <ion-buttons right>\n      <button ion-button icon-only menuToggle="right">\n        <ion-icon name="home"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n<ion-content padding>\n  <p>The home icon on the right is a small width sidemenu.</p>\n  <button ion-button block color="secondary" (click)="changeMenu(MENU.DEFAULT)">Default sidemenu</button>\n  <button ion-button block color="danger" (click)="changeMenu(MENU.AVATAR)">Sidemenu with avatar</button>\n  <button ion-button block color="black" (click)="changeMenu(MENU.MATERIAL)">Material Design</button>\n</ion-content>\n'/*ion-inline-end:"/Applications/XAMPP/xamppfiles/htdocs/codegate/app/src/pages/side-menu/side-menu.html"*/
+            selector: 'page-side-menu',template:/*ion-inline-start:"/Applications/XAMPP/xamppfiles/htdocs/codegate/mobileApp/src/pages/side-menu/side-menu.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-buttons left>\n      <button ion-button icon-only menuToggle="left">\n        <ion-icon name="menu"></ion-icon>\n      </button>\n    </ion-buttons>\n    <ion-title>Side Menu</ion-title>\n    <ion-buttons right>\n      <button ion-button icon-only menuToggle="right">\n        <ion-icon name="home"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n</ion-header>\n<ion-content padding>\n  <p>The home icon on the right is a small width sidemenu.</p>\n  <button ion-button block color="secondary" (click)="changeMenu(MENU.DEFAULT)">Default sidemenu</button>\n  <button ion-button block color="danger" (click)="changeMenu(MENU.AVATAR)">Sidemenu with avatar</button>\n  <button ion-button block color="black" (click)="changeMenu(MENU.MATERIAL)">Material Design</button>\n</ion-content>\n'/*ion-inline-end:"/Applications/XAMPP/xamppfiles/htdocs/codegate/mobileApp/src/pages/side-menu/side-menu.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* MenuController */]])
     ], SideMenuPage);
@@ -49,13 +49,13 @@ var SideMenuPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 942:
+/***/ 943:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SideMenuPageModule", function() { return SideMenuPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__side_menu__ = __webpack_require__(1274);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__side_menu__ = __webpack_require__(1275);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(57);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {

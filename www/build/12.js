@@ -1,6 +1,6 @@
 webpackJsonp([12],{
 
-/***/ 1276:
+/***/ 1277:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -61,7 +61,7 @@ var SlideColorChangingPage = /** @class */ (function () {
     ], SlideColorChangingPage.prototype, "slider", void 0);
     SlideColorChangingPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-slide-color-changing',template:/*ion-inline-start:"/Applications/XAMPP/xamppfiles/htdocs/codegate/app/src/pages/slide/slide-color-changing/slide-color-changing.html"*/'<ion-header no-border>\n  <ion-navbar transparent>\n    <ion-title>Color Changing Slide</ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content fullscreen>\n  <ion-slides #slider pager\n              (ionSlideDidChange)="onSlideChanged()">\n    <ion-slide [style.background-color]="color">\n      <div class="container">\n        <h1>\n          <span>Love </span>\n          <ul>\n            <li>him</li>\n            <li>her</li>\n            <li>you</li>\n            <li>me</li>\n            <li>them</li>\n            <li>everyone</li>\n          </ul>\n        </h1>\n      </div>\n    </ion-slide>\n    <ion-slide *ngFor="let slide of slides" [style.background-color]="color">\n      <h2>{{slide.title}}</h2>\n    </ion-slide>\n  </ion-slides>\n</ion-content>\n\n'/*ion-inline-end:"/Applications/XAMPP/xamppfiles/htdocs/codegate/app/src/pages/slide/slide-color-changing/slide-color-changing.html"*/
+            selector: 'page-slide-color-changing',template:/*ion-inline-start:"/Applications/XAMPP/xamppfiles/htdocs/codegate/mobileApp/src/pages/slide/slide-color-changing/slide-color-changing.html"*/'<ion-header no-border>\n  <ion-navbar transparent>\n    <ion-title>Color Changing Slide</ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content fullscreen>\n  <ion-slides #slider pager\n              (ionSlideDidChange)="onSlideChanged()">\n    <ion-slide [style.background-color]="color">\n      <div class="container">\n        <h1>\n          <span>Love </span>\n          <ul>\n            <li>him</li>\n            <li>her</li>\n            <li>you</li>\n            <li>me</li>\n            <li>them</li>\n            <li>everyone</li>\n          </ul>\n        </h1>\n      </div>\n    </ion-slide>\n    <ion-slide *ngFor="let slide of slides" [style.background-color]="color">\n      <h2>{{slide.title}}</h2>\n    </ion-slide>\n  </ion-slides>\n</ion-content>\n\n'/*ion-inline-end:"/Applications/XAMPP/xamppfiles/htdocs/codegate/mobileApp/src/pages/slide/slide-color-changing/slide-color-changing.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavController */]])
     ], SlideColorChangingPage);
@@ -72,13 +72,13 @@ var SlideColorChangingPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 944:
+/***/ 945:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SlideColorChangingPageModule", function() { return SlideColorChangingPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__slide_color_changing__ = __webpack_require__(1276);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__slide_color_changing__ = __webpack_require__(1277);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(57);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {

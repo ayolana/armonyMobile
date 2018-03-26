@@ -1,6 +1,6 @@
 webpackJsonp([76],{
 
-/***/ 1130:
+/***/ 1129:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -65,7 +65,7 @@ var CrudFirebaseListPage = /** @class */ (function () {
     };
     CrudFirebaseListPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-crud-firebase-list',template:/*ion-inline-start:"/Applications/XAMPP/xamppfiles/htdocs/codegate/app/src/pages/crud/crud-firebase-list/crud-firebase-list.html"*/'<ion-header>\n\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>CRUD Firebase (Notes)</ion-title>\n    <ion-buttons end>\n      <button ion-button (click)="addNotes()" icon-only color="royal">\n        <ion-icon name="add"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n \n  <ion-list>\n    <ion-item-sliding *ngFor="let item of notesItems | async">\n      <ion-item (click)="editNotes($event, item)">\n        {{ item.title }}\n      </ion-item>\n      <ion-item-options side="right">\n        <button ion-button color="danger" icon-only (click)="deleteNotes(item.key)"><ion-icon name="trash"></ion-icon></button>\n      </ion-item-options>\n    </ion-item-sliding>\n  </ion-list>\n\n</ion-content>\n'/*ion-inline-end:"/Applications/XAMPP/xamppfiles/htdocs/codegate/app/src/pages/crud/crud-firebase-list/crud-firebase-list.html"*/,
+            selector: 'page-crud-firebase-list',template:/*ion-inline-start:"/Applications/XAMPP/xamppfiles/htdocs/codegate/mobileApp/src/pages/crud/crud-firebase-list/crud-firebase-list.html"*/'<ion-header>\n\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>CRUD Firebase (Notes)</ion-title>\n    <ion-buttons end>\n      <button ion-button (click)="addNotes()" icon-only color="royal">\n        <ion-icon name="add"></ion-icon>\n      </button>\n    </ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content>\n \n  <ion-list>\n    <ion-item-sliding *ngFor="let item of notesItems | async">\n      <ion-item (click)="editNotes($event, item)">\n        {{ item.title }}\n      </ion-item>\n      <ion-item-options side="right">\n        <button ion-button color="danger" icon-only (click)="deleteNotes(item.key)"><ion-icon name="trash"></ion-icon></button>\n      </ion-item-options>\n    </ion-item-sliding>\n  </ion-list>\n\n</ion-content>\n'/*ion-inline-end:"/Applications/XAMPP/xamppfiles/htdocs/codegate/mobileApp/src/pages/crud/crud-firebase-list/crud-firebase-list.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* LoadingController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavController */],
@@ -79,7 +79,7 @@ var CrudFirebaseListPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 880:
+/***/ 879:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -87,7 +87,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CrudFirebaseListPageModule", function() { return CrudFirebaseListPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(57);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__crud_firebase_list__ = __webpack_require__(1130);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__crud_firebase_list__ = __webpack_require__(1129);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);

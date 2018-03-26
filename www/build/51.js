@@ -30,7 +30,7 @@ var AutosizingTextarea = /** @class */ (function () {
     }
     AutosizingTextarea = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-autosizing-textarea',template:/*ion-inline-start:"/Applications/XAMPP/xamppfiles/htdocs/codegate/app/src/pages/miscellaneous/autosizing-textarea/autosizing-textarea.html"*/'<ion-header >\n\n  <ion-navbar color="primary">\n    <ion-title>Autosizing Textarea</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-item>\n    <ion-textarea name="dummyText" [(ngModel)]="dummyText" autosize></ion-textarea>\n  </ion-item>\n</ion-content>\n'/*ion-inline-end:"/Applications/XAMPP/xamppfiles/htdocs/codegate/app/src/pages/miscellaneous/autosizing-textarea/autosizing-textarea.html"*/,
+            selector: 'page-autosizing-textarea',template:/*ion-inline-start:"/Applications/XAMPP/xamppfiles/htdocs/codegate/mobileApp/src/pages/miscellaneous/autosizing-textarea/autosizing-textarea.html"*/'<ion-header >\n\n  <ion-navbar color="primary">\n    <ion-title>Autosizing Textarea</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-item>\n    <ion-textarea name="dummyText" [(ngModel)]="dummyText" autosize></ion-textarea>\n  </ion-item>\n</ion-content>\n'/*ion-inline-end:"/Applications/XAMPP/xamppfiles/htdocs/codegate/mobileApp/src/pages/miscellaneous/autosizing-textarea/autosizing-textarea.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* NavParams */]])

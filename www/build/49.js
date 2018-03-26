@@ -30,7 +30,7 @@ var CountdownPage = /** @class */ (function () {
     }
     CountdownPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-            selector: 'page-countdown',template:/*ion-inline-start:"/Applications/XAMPP/xamppfiles/htdocs/codegate/app/src/pages/miscellaneous/countdown/countdown.html"*/'<ion-header >\n	<ion-navbar color="primary">\n		<ion-title>Countdown</ion-title>\n	</ion-navbar>\n</ion-header>\n\n<ion-content padding>\n	<h2>Countdown Timer</h2>\n	<timer #countdownTimer [timeInSeconds]="2700"></timer>\n	<timer-progress #countdownTimerProgress [timeInSeconds]="2700"></timer-progress>\n</ion-content>'/*ion-inline-end:"/Applications/XAMPP/xamppfiles/htdocs/codegate/app/src/pages/miscellaneous/countdown/countdown.html"*/
+            selector: 'page-countdown',template:/*ion-inline-start:"/Applications/XAMPP/xamppfiles/htdocs/codegate/mobileApp/src/pages/miscellaneous/countdown/countdown.html"*/'<ion-header >\n	<ion-navbar color="primary">\n		<ion-title>Countdown</ion-title>\n	</ion-navbar>\n</ion-header>\n\n<ion-content padding>\n	<h2>Countdown Timer</h2>\n	<timer #countdownTimer [timeInSeconds]="2700"></timer>\n	<timer-progress #countdownTimerProgress [timeInSeconds]="2700"></timer-progress>\n</ion-content>'/*ion-inline-end:"/Applications/XAMPP/xamppfiles/htdocs/codegate/mobileApp/src/pages/miscellaneous/countdown/countdown.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* MenuController */]])

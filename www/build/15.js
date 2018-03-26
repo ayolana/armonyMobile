@@ -1,6 +1,6 @@
 webpackJsonp([15],{
 
-/***/ 1273:
+/***/ 1274:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -33,7 +33,7 @@ var ThemingPage = /** @class */ (function () {
     };
     ThemingPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["Component"])({
-            selector: 'page-theming',template:/*ion-inline-start:"/Applications/XAMPP/xamppfiles/htdocs/codegate/app/src/pages/setting/theming/theming.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Theming</ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content padding>\n  <h3>Setting theme</h3>\n  <button class="pop-in" ion-button (click)="changeTheme(\'\')">Default</button>\n  <button class="pop-in" ion-button color="dark" (click)="changeTheme(\'theme-dark\')">Dark</button>\n</ion-content>\n'/*ion-inline-end:"/Applications/XAMPP/xamppfiles/htdocs/codegate/app/src/pages/setting/theming/theming.html"*/
+            selector: 'page-theming',template:/*ion-inline-start:"/Applications/XAMPP/xamppfiles/htdocs/codegate/mobileApp/src/pages/setting/theming/theming.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Theming</ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content padding>\n  <h3>Setting theme</h3>\n  <button class="pop-in" ion-button (click)="changeTheme(\'\')">Default</button>\n  <button class="pop-in" ion-button color="dark" (click)="changeTheme(\'theme-dark\')">Dark</button>\n</ion-content>\n'/*ion-inline-end:"/Applications/XAMPP/xamppfiles/htdocs/codegate/mobileApp/src/pages/setting/theming/theming.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["n" /* NavController */], __WEBPACK_IMPORTED_MODULE_0__app_global_setting__["b" /* AppState */]])
     ], ThemingPage);
@@ -44,13 +44,13 @@ var ThemingPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 941:
+/***/ 942:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ThemingPageModule", function() { return ThemingPageModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__theming__ = __webpack_require__(1273);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__theming__ = __webpack_require__(1274);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(57);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {

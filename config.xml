@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.ionicpremium.ionium2" version="1.3.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Ionium 2</name>
-    <description>Ionic Premium 2</description>
-    <author email="info@ionicpremium.com" href="http://ionicpremium.com/">Ionic Premium Team</author>
+<widget id="com.codegateng.armony" version="1.3.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Armony</name>
+    <description>Armony</description>
+    <author email="developer@codegate.ng" href="https://codegate.ng/">Armony Development Team</author>
     <content src="index.html" />
     <access allows-arbitrary-loads-for-media="true" allows-arbitrary-loads-in-web-content="true" allows-local-networking="true" origin="*" />
     <allow-navigation href="http://localhost:8080/*" />
@@ -87,6 +87,7 @@
         <icon height="1024" src="resources/ios/icon/icon-1024.png" width="1024" />
         <splash height="2732" src="resources/ios/splash/Default@2x~universal~anyany.png" width="2732" />
     </platform>
+    <engine name="android" spec="^6.3.0" />
     <plugin name="cordova-plugin-actionsheet" spec="^2.3.3" />
     <plugin name="cordova-plugin-apprate" spec="^1.3.0" />
     <plugin name="cordova-plugin-crop" spec="^0.4.0" />
@@ -119,5 +120,4 @@
     <plugin name="phonegap-plugin-push" spec="^1.10.6">
         <variable name="SENDER_ID" value="328405086925" />
     </plugin>
-    <engine name="android" spec="^6.3.0" />
 </widget>
