@@ -600,11 +600,11 @@ var map = {
 		84
 	],
 	"../pages/components/modals/modals.module": [
-		873,
+		872,
 		83
 	],
 	"../pages/components/popovers/popovers.module": [
-		872,
+		873,
 		82
 	],
 	"../pages/components/popovers/show-popover/show-popover.module": [
@@ -1391,8 +1391,8 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/components/datetime/datetime.module#DatetimePageModule', name: 'DatetimePage', segment: 'datetime', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/components/fab/fab.module#FabPageModule', name: 'FabPage', segment: 'fab', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/components/modals/modalpopup/modalpopup.module#ModalContentPageModule', name: 'ModalContentPage', segment: 'modalpopup', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/components/popovers/popovers.module#PopoversPageModule', name: 'PopoversPage', segment: 'popovers', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/components/modals/modals.module#ModalsPageModule', name: 'ModalsPage', segment: 'modals', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/components/popovers/popovers.module#PopoversPageModule', name: 'PopoversPage', segment: 'popovers', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/components/popovers/show-popover/show-popover.module#ShowPopoverPageModule', name: 'ShowPopoverPage', segment: 'show-popover', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/components/searchbar/searchbar.module#SearchbarPageModule', name: 'SearchbarPage', segment: 'searchbar', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/components/segment/segment.module#SegmentPageModule', name: 'SegmentPage', segment: 'segment', priority: 'low', defaultHistory: [] },
