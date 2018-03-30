@@ -32,6 +32,8 @@ import { CrudHttpProvider } from '../providers/crud-http/crud-http';
 import { CrudStorageProvider } from '../providers/crud-storage/crud-storage';
 import { ToastService } from '../providers/util/toast.service';
 import { AlertService } from '../providers/util/alert.service';
+import { AuthProvider } from '../providers/auth/auth';
+
 
 //NATIVE
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -95,6 +97,7 @@ export const PROVIDERS = [
     CrudHttpProvider,
     FirebaseDatabaseProvider,
     FirebaseAuthProvider,
+    AuthProvider,
     CrudStorageProvider,
     AppState,
 ];

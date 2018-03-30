@@ -1,6 +1,7 @@
 export const ConstantVariable:any = {
     //URL API
-    APIURL : "http://www.ionicpremium.com/ionium2/api/",
+    // APIURL: "http://www.ionicpremium.com/ionium2/api/",
+    APIURL: "http://localhost/codegate/armony/public_html/api/",
     
     //firebaseConfig
     // apiKey: "AIzaSyCgshQZw3-8FBMiQzzRUBq37i37Yur_B84",
