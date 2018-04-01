@@ -2,12 +2,16 @@
 import { Http, Headers } from '@angular/http';
 import { Injectable } from '@angular/core';
 import { ConstantVariable } from '../../app/constant-variable';
+import { Storage } from '@ionic/storage';
 import 'rxjs/add/operator/map';
 
 const SERVER_URL: any = {
   getNormal: ConstantVariable.APIURL + 'auth/config/settings',
   getLimit: ConstantVariable.APIURL + 'limit.php',
 };
+
+const STORAGE_KEY = 'authUser';
+
 /*
   Generated class for the AuthProvider provider.
 
@@ -20,7 +24,7 @@ export class AuthProvider {
   configs: any;
   datas: any;
 
-  constructor(public http: Http) {
+  constructor(public http: Http, public storage:Storage) {
     console.log('Hello AuthProvider Provider');
     this.configs=null;
   }
@@ -28,6 +32,11 @@ export class AuthProvider {
   // getConfigData() {
   //   return this.http.get('https://swapi.co/api/films');
   // }
+
+  storeUser(user) {
+    console.log('Stored User');
+    return this.storage.set(STORAGE_KEY, user);
+  }
 
   getConfigData() {
     return new Promise(resolve => {

@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { MODULES, PROVIDERS, NATIVES  } from './app.imports';
 import { IonicStorageModule } from '@ionic/storage';
+import { StoreProvider } from '../providers/store/store';
 
 // this is the magic wand
 enableProdMode();
@@ -29,6 +30,7 @@ enableProdMode();
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     PROVIDERS,
     NATIVES,
+    StoreProvider,
   ]
 })
 export class AppModule {}
