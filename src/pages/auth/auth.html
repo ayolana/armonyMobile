@@ -6,7 +6,8 @@
   <ion-slides #slider direction="vertical">
     <ion-slide class="swiper-no-swiping">
       <div padding>
-        <img class="logo" src="assets/img/logo/logo.png" width="100" />
+        
+        <img class="logo" src="assets/img/logo/ecowas_logo.jpg" style="width: 300px" />
         <ion-slides class="text-slider" autoplay="2000" loop="true">
           <ion-slide>
             <h3>Welcome to Armony</h3>
@@ -35,19 +36,24 @@
       <ion-slides #innerSlider class="content-slider">
         <ion-slide class="swiper-no-swiping">
           <div padding-left padding-right text-left>
+            <form (submit)="doLogin()">
             <h1 padding-horizontal>Login</h1>
             <ion-item padding-right>
               <ion-label floating>Username</ion-label>
-              <ion-input type="text"></ion-input>
+              <ion-input [(ngModel)]="loginData.username" name="username" required type="text"></ion-input>
             </ion-item>
             <ion-item padding-right>
               <ion-label floating>Password</ion-label>
-              <ion-input type="password"></ion-input>
+              <ion-input [(ngModel)]="loginData.password" name="password" required type="password"></ion-input>
             </ion-item>
+            
             <div padding>
-              <button ion-button block (click)="login()">Login</button>
-              <button no-padding ion-button clear (click)="slideNext()" color="light">FORGOT PASSWORD?</button>
+              <button ion-button block type="submit">Login</button>
+              <a no-padding ion-button clear (click)="slideNext()" color="light">FORGOT PASSWORD?</a>
             </div>
+
+          </form>
+
             <button small clear text-left margin-top ion-button icon-right clear (click)="goToSignup()">
               Go back Home
               <ion-icon end name="arrow-down"></ion-icon>

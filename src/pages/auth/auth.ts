@@ -1,10 +1,14 @@
 import { Component, ViewChild } from '@angular/core';
-import { IonicPage, NavController, Slides, NavParams, MenuController } from 'ionic-angular';
+import { IonicPage, LoadingController, AlertController, NavController, Slides, NavParams, MenuController } from 'ionic-angular';
 import { Observable } from 'rxjs/Observable';
 import { HttpClient } from '@angular/common/http';
 import { AuthProvider} from '../../providers/auth/auth';
-import { Storage } from '@ionic/storage';
+import { ConstantVariable } from "../../app/constant-variable";
 
+const SERVER_URL: any = {
+  getNormal: ConstantVariable.APIURL + 'auth/config/settings',
+  getImageUrl: ConstantVariable.IMAGEURL,
+};
 /**
  * Generated class for the AuthPage page.
  *
@@ -20,26 +24,28 @@ import { Storage } from '@ionic/storage';
 export class AuthPage {
   films: Observable<any>;
   settings: any;
+  coop_details: any;
+  data: any;
+  loading: any;
+  imageUrl: String;
+  loginData = { username: '', password: '' };
 
-  constructor(public navCtrl: NavController, private storage: Storage, public navParams: NavParams, private menu: MenuController, public httpClient: HttpClient, public authProvider: AuthProvider) {
-    // this.menuCtrl.enable(false, 'menu-avatar');
-    // this.menuCtrl.enable(false);
-    // this.settings = this.httpClient.get('https://swapi.co/api/films');
+  constructor(public navCtrl: NavController, 
+              public navParams: NavParams, 
+              private menu: MenuController,
+              public alertCtrl: AlertController,
+               public httpClient: HttpClient, 
+    public loadingCtrl: LoadingController, 
+               public authProvider: AuthProvider) {
+    
     this.settings = this.authProvider.getConfigData()
       .then(
         data => {
           this.settings = data
+          this.coop_details = this.settings.coop_details
         }
       );
-    
-      console.log(this.settings);
-
-    // this.films = this.httpClient.get('https://swapi.co/api/films');
-    // this.films
-    //   .subscribe(data => {
-    //     console.log('my data: ', data);
-    //   })
-
+    this.imageUrl = (SERVER_URL.getImageUrl);
   }
 
   @ViewChild('slider') slider: Slides;
@@ -47,14 +53,6 @@ export class AuthPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AuthPage');
-    
-    this.storage.set('name', 'Max');
-
-    // Or to get a key/value pair
-    this.storage.get('name').then((val) => {
-      console.log('Your age is', val);
-    });
-
   }
 
   
@@ -84,5 +82,65 @@ export class AuthPage {
   slidePrevious() {
     this.innerSlider.slidePrev();
   }
+
+  presentLoading(message) {
+    const loading = this.loadingCtrl.create({
+      duration: 500
+    });
+
+    loading.onDidDismiss(() => {
+      const alert = this.alertCtrl.create({
+        title: 'Success',
+        subTitle: message,
+        buttons: ['Dismiss']
+      });
+      alert.present();
+    });
+
+    loading.present();
+  }
+
+  login() {
+    this.presentLoading('Thanks for signing up!');
+    // this.navCtrl.push(HomePage);
+  }
+
+  doLogin() {
+    console.log(this.loginData)
+    if(this.loginData.username.length < 1 || this.loginData.password.length < 1){
+      this.presentLoading('Username or Password cannot be empty')
+      // this.loading.dismiss();
+    }else{
+
+      this.showLoader();
+      
+    // this.authProvider.getConfigData()
+      this.authProvider.login(this.loginData).then((result) => {
+        this.loading.dismiss();
+        this.data = result;
+      }, (err) => {
+        this.loading.dismiss();
+        this.presentLoading(err);
+      });
+    }
+  }
+
+
+  showLoader() {
+    this.loading = this.loadingCtrl.create({
+      content: 'Authenticating...'
+    });
+
+    this.loading.present();
+  }
+
+  signup() {
+    this.presentLoading('Thanks for signing up!');
+    // this.navCtrl.push(HomePage);
+  }
+  resetPassword() {
+    this.presentLoading('An e-mail was sent with your new password.');
+  }
+
 
 }

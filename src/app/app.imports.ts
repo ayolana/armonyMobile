@@ -30,9 +30,9 @@ import { FirebaseDatabaseProvider } from './../providers/firebase/firebase-datab
 import { FirebaseAuthProvider } from './../providers/firebase/firebase-auth';
 import { CrudHttpProvider } from '../providers/crud-http/crud-http';
 import { CrudStorageProvider } from '../providers/crud-storage/crud-storage';
+import { AuthProvider } from '../providers/auth/auth';
 import { ToastService } from '../providers/util/toast.service';
 import { AlertService } from '../providers/util/alert.service';
-import { AuthProvider } from '../providers/auth/auth';
 
 
 //NATIVE

@@ -1,5 +1,5 @@
-import { HttpClient } from '@angular/common/http';
-// import { Http, Headers, RequestOptions } from '@angular/http';
+// import { HttpClient,  } from '@angular/common/http';
+import { Http, Headers } from '@angular/http';
 import { Injectable } from '@angular/core';
 import { ConstantVariable } from '../../app/constant-variable';
 import 'rxjs/add/operator/map';
@@ -20,7 +20,7 @@ export class AuthProvider {
   configs: any;
   datas: any;
 
-  constructor(public http: HttpClient) {
+  constructor(public http: Http) {
     console.log('Hello AuthProvider Provider');
     this.configs=null;
   }
@@ -39,6 +39,20 @@ export class AuthProvider {
           resolve(this.datas);
         });
     })
+  }
+
+  login(credentials) {
+    return new Promise((resolve, reject) => {
+      let headers = new Headers();
+      headers.append('Content-Type', 'application/json');
+
+      this.http.post(ConstantVariable.APIURL + 'login', JSON.stringify(credentials), { headers: headers })
+        .subscribe(res => {
+          resolve(res.json());
+        }, (err) => {
+          reject(err);
+        });
+    });
   }
 
   // getNotesDB() {
