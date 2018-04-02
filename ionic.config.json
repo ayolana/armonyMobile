@@ -1,6 +1,6 @@
 {
   "name": "Armony",
-  "app_id": "",
+  "app_id": "5894d2e7",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
