@@ -16,7 +16,8 @@ import { FirebaseAuthProvider } from '../providers/firebase/firebase-auth';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage:any = 'Homev1Page';
+  // rootPage: any = 'Homev1Page';
+  rootPage: any = 'AuthPage';
   pages:any[];
   activePage = new Subject();
   userData:any;
