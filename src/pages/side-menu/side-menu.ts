@@ -14,6 +14,8 @@ export class SideMenuPage {
     AVATAR: 'menu-avatar',
   };
 
+  
+
   constructor(public navCtrl: NavController, public menuCtrl: MenuController) { }
 
   changeMenu(menu) {

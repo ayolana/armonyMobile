@@ -1,7 +1,7 @@
 
 <div class="{{global.state['theme']}}">
   <!--Default Menu-->
-  <ion-menu [content]="content" id="menu-components">
+  <!-- <ion-menu [content]="content" id="menu-components">
     <ion-header color="primary">
       <ion-toolbar>
         <ion-title> {{ 'MENU' | translate }} </ion-title>
@@ -17,7 +17,7 @@
       </button>
       </ion-list>
     </ion-content>
-  </ion-menu>
+  </ion-menu> -->
   <!--Side Menu with avatar-->
   <ion-menu [content]="content" id="menu-avatar">
     <ion-content>
@@ -52,26 +52,7 @@
     </ion-content>
   </ion-menu>
   <!--Material Design Menu-->
-  <ion-menu [content]="content" id="menu-material">
-    <ion-content>
-      <div class="menu-header">
-        <!--material-design-background-->
-        <img class="user-avatar round" [src]="userData.photo  || placeholder" onerror="this.src='assets/img/logo/logo.png'"/>
-        <p class="name">{{ userData.name  }}</p>
-        <p class="e-mail">{{ userData.email  }}</p>
-      </div>
-      <ion-list no-lines>
-        <button menuClose="left" ion-item detail-none *ngFor="let p of pages" (click)="openPage(p)">
-          <ion-icon [name]="p.icon" item-left></ion-icon>
-          {{p.title | translate}}
-        </button>
-        <button *ngIf="isLogin" menuClose="left" ion-item detail-none (click)="doLogout()">
-            <ion-icon tem-left></ion-icon>
-            {{ 'LOGOUT' | translate}}
-          </button>
-      </ion-list>
-    </ion-content>
-  </ion-menu>
+  
 
   <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
   <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

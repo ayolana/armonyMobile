@@ -118,7 +118,8 @@ export class AuthPage {
         this.data = result;
         this.authProvider.storeUser(this.data.user).then(storedUser => {
           // console.log('StoredUser :' + storedUser)
-          this.navCtrl.push('Homev1Page');
+          // this.navCtrl.push('Homev1Page');
+          this.navCtrl.setRoot('Homev1Page')
         })
       }, (err) => {
         this.loading.dismiss();
