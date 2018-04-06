@@ -64,6 +64,19 @@ export class AuthProvider {
     });
   }
 
+  forgot(email){
+    return new Promise((resolve, reject) => {
+      let headers = new Headers();
+      headers.append('Content-Type', 'application/json');
+
+      this.http.post(ConstantVariable.APIURL + 'forgot-password', {email:email}, { headers: headers })
+        .subscribe(res => {
+          resolve(res.json());
+        }, (err) => {
+          reject(err);
+        });
+    }); 
+  }
   // getNotesDB() {
   //   return new Promise(resolve => {
   //     this.http.get(SERVER_URL.getNormal)
