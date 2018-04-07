@@ -4,6 +4,7 @@ import { Events, Config, AlertController, Platform, MenuController, Nav } from '
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Push, PushObject, PushOptions } from '@ionic-native/push';
+
 // import { ConstantVariable } from './constant-variable';
 import { AppState, PAGES } from './global.setting';
 import { Subject } from 'rxjs';

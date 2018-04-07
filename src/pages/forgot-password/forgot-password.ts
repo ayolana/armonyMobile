@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { IonicPage, NavController, AlertController,  LoadingController, MenuController } from 'ionic-angular';
 import { AuthProvider } from '../../providers/auth/auth';
+import { FlashProvider } from '../../providers/flash/flash';
 
 @IonicPage()
 @Component({
@@ -21,7 +22,7 @@ export class ForgotPasswordPage {
   private forgotForm: FormGroup;
 
 
-  constructor(public formBuilder: FormBuilder, public alertCtrl: AlertController, public authProvider: AuthProvider, public loadingCtrl: LoadingController, private menu: MenuController, public navCtrl: NavController) {
+  constructor(public formBuilder: FormBuilder, private flashProvider: FlashProvider, public alertCtrl: AlertController, public authProvider: AuthProvider, public loadingCtrl: LoadingController, private menu: MenuController, public navCtrl: NavController) {
     this.forgotForm = formBuilder.group({
       email: ['', Validators.required]
     });
@@ -67,8 +68,8 @@ export class ForgotPasswordPage {
 
   doForgotPassword() {
     if (!this.forgotForm.valid) {
-      console.log('Invalid or empty data');
-      this.presentLoading('Email cannot be empty', 'Error')
+      // console.log('Invalid or empty data');
+      this.flashProvider.show('Email cannot be empty!', 4000, 'danger');
     }else{
       console.log(this.forgotForm.value);
       this.showLoader();

@@ -7,6 +7,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { MODULES, PROVIDERS, NATIVES  } from './app.imports';
 import { IonicStorageModule } from '@ionic/storage';
 import { StoreProvider } from '../providers/store/store';
+import { FlashProvider } from '../providers/flash/flash';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // this is the magic wand
 enableProdMode();
@@ -19,6 +21,7 @@ enableProdMode();
     MODULES,
     IonicModule.forRoot(MyApp),
     SharedModule,
+    BrowserAnimationsModule,
     IonicStorageModule.forRoot(),
     HttpClientModule
   ],
@@ -31,6 +34,7 @@ enableProdMode();
     PROVIDERS,
     NATIVES,
     StoreProvider,
+    FlashProvider,
   ]
 })
 export class AppModule {}

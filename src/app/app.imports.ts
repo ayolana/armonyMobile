@@ -31,6 +31,7 @@ import { FirebaseAuthProvider } from './../providers/firebase/firebase-auth';
 import { CrudHttpProvider } from '../providers/crud-http/crud-http';
 import { CrudStorageProvider } from '../providers/crud-storage/crud-storage';
 import { AuthProvider } from '../providers/auth/auth';
+import { FlashProvider } from '../providers/flash/flash';
 import { StoreProvider } from '../providers/store/store';
 import { ToastService } from '../providers/util/toast.service';
 import { AlertService } from '../providers/util/alert.service';
@@ -64,6 +65,8 @@ import { Timer } from '../components/countdown-timer/timer';
 import { TimerProgress } from '../components/timer-progress/timer-progress';
 import { ExpandableHeader } from '../components/expandable-header/expandable-header';
 import { FlashCardComponent } from '../components/flash-card/flash-card';
+import { FlashComponent } from '../components/flash/flash';
+import { TimeBarComponent } from '../components/time-bar/time-bar';
 import { TimelineTimeComponent, TimelineComponent, TimelineItemComponent } from '../components/timeline/timeline';
 
 //PIPES
@@ -99,6 +102,7 @@ export const PROVIDERS = [
     FirebaseDatabaseProvider,
     FirebaseAuthProvider,
     AuthProvider,
+    FlashProvider,
     CrudStorageProvider,
     StoreProvider,
     AppState,
@@ -130,6 +134,8 @@ export const COMPONENTS = [
     Timer,
     ExpandableHeader,
     FlashCardComponent,
+    FlashComponent,
+    TimeBarComponent,
     TimelineComponent,
     TimelineItemComponent,
     TimelineTimeComponent
