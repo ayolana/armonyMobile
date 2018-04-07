@@ -16,6 +16,7 @@ page-login-background-slider {
     }
     .scroll-content {
         margin-top: 0 !important;
+        margin-bottom: -56px !important;
     }
     .logo {
         width: 40%;
@@ -62,4 +63,9 @@ page-login-background-slider {
     ion-button {
         opacity: 0.8;
     }
+    ion-content>div {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
 }

@@ -69,7 +69,7 @@ export class AuthProvider {
       let headers = new Headers();
       headers.append('Content-Type', 'application/json');
 
-      this.http.post(ConstantVariable.APIURL + 'forgot-password', {email:email}, { headers: headers })
+      this.http.post(ConstantVariable.APIURL + 'forgot-password', { email: email, is_app:'is_app'}, { headers: headers })
         .subscribe(res => {
           resolve(res.json());
         }, (err) => {

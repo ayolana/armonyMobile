@@ -7,9 +7,13 @@
     <ion-slide class="slide-background swiper-no-swiping" *ngFor="let background of backgrounds" [ngStyle]="{'background-image': 'url(' + background +')'}">
     </ion-slide>
   </ion-slides>
+
   <div class="login-container">
-    <img class="logo" src="assets/img/logo/logo.png" />
+    <img ng-if="coop_details.logo" class="logo" src="assets/img/logo/ecowas_logo.jpg"  style="width: 300px"/>
     <form [formGroup]="login" (ngSubmit)="doLogin()">
+        <span ng-if="coop_details">
+       {{ coop_details }}AAAA
+        </span>
       <strong>Login:</strong>
       <ion-item>
         <ion-input formControlName="username" type="text" placeholder="Username"></ion-input>

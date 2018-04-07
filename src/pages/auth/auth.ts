@@ -4,12 +4,12 @@ import { IonicPage, LoadingController, AlertController, NavController, NavParams
 import { Observable } from 'rxjs/Observable';
 import { HttpClient } from '@angular/common/http';
 import { AuthProvider } from '../../providers/auth/auth';
-// import { ConstantVariable } from "../../app/constant-variable";
+import { ConstantVariable } from "../../app/constant-variable";
 
-// const SERVER_URL: any = {
-//   getNormal: ConstantVariable.APIURL + 'auth/config/settings',
-//   getImageUrl: ConstantVariable.IMAGEURL,
-// };
+const SERVER_URL: any = {
+  getNormal: ConstantVariable.APIURL + 'auth/config/settings',
+  getImageUrl: ConstantVariable.IMAGEURL,
+};
 
 @IonicPage()
 @Component({
@@ -47,6 +47,17 @@ export class AuthPage {
       password: ['', Validators.compose([Validators.minLength(6),
       Validators.required])]
     });
+
+    this.settings = this.authProvider.getConfigData()
+      .then(
+        data => {
+          this.settings = data
+          this.coop_details = this.settings.coop_details
+          // console.log(data)
+          console.log(this.settings.coop_details)
+        }
+      );
+    this.imageUrl = (SERVER_URL.getImageUrl);
 
     this.login = this.formBuilder.group({
       username: ['', Validators.required],
@@ -95,32 +106,6 @@ export class AuthPage {
   }
 
 
-
-
-  // doLogin() {
-  //   console.log(this.loginData)
-  //   if (this.loginData.username.length < 1 || this.loginData.password.length < 1) {
-  //     this.presentLoading('Username or Password cannot be empty', 'Error')
-  //     // this.loading.dismiss();
-  //   } else {
-
-  //     this.showLoader();
-  //     this.authProvider.login(this.loginData).then((result) => {
-  //       this.loading.dismiss();
-  //       this.data = result;
-  //       this.authProvider.storeUser(this.data.user).then(storedUser => {
-  //         // console.log('StoredUser :' + storedUser)
-  //         this.navCtrl.push('Homev1Page');
-  //       })
-  //     }, (err) => {
-  //       this.loading.dismiss();
-  //       console.log(err)
-  //       this.presentLoading('The credentials do not match our records', 'Error');
-  //     });
-  //   }
-  // }
-
-
   showLoader() {
     this.loading = this.loadingCtrl.create({
       content: 'Authenticating...'
@@ -133,10 +118,9 @@ export class AuthPage {
     console.log(this.login.value)
 
     if (!this.login.valid) {
-      console.log('Invalid or empty dataAA');
+      console.log('Invalid or empty data');
       this.presentLoading('Username or Password cannot be empty', 'Error')
-      this.loading.dismiss();
-
+      // this.loading.dismiss();
     } else {
       console.log('Passed');
       const userEmail = this.login.value.username;
@@ -150,7 +134,9 @@ export class AuthPage {
         this.data = result;
         this.authProvider.storeUser(this.data.user).then(storedUser => {
           // console.log('StoredUser :' + storedUser)
-          this.navCtrl.push('Homev1Page');
+          // this.navCtrl.push('Homev1Page');
+          this.navCtrl.setRoot('Homev1Page')
+
         })
       }, (err) => {
         this.loading.dismiss();

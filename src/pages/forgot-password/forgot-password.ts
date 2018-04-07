@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
-import { IonicPage, NavController, MenuController } from 'ionic-angular';
+import { Validators, FormBuilder, FormGroup } from '@angular/forms';
+import { IonicPage, NavController, AlertController,  LoadingController, MenuController } from 'ionic-angular';
+import { AuthProvider } from '../../providers/auth/auth';
 
 @IonicPage()
 @Component({
@@ -8,6 +9,8 @@ import { IonicPage, NavController, MenuController } from 'ionic-angular';
   templateUrl: 'forgot-password.html',
 })
 export class ForgotPasswordPage {
+  data: any;
+  loading: any;
 
   backgrounds = [
     'assets/img/background/background-1.jpg',
@@ -15,18 +18,24 @@ export class ForgotPasswordPage {
     'assets/img/background/background-3.jpg',
     'assets/img/background/background-4.jpg'
   ];
-  public loginForm: any;
+  private forgotForm: FormGroup;
 
-  constructor(public formBuilder: FormBuilder, private menu: MenuController, public navCtrl: NavController) {
-    this.loginForm = formBuilder.group({
-      email: ['', Validators.required],
-      password: ['', Validators.compose([Validators.minLength(6),
-      Validators.required])]
+
+  constructor(public formBuilder: FormBuilder, public alertCtrl: AlertController, public authProvider: AuthProvider, public loadingCtrl: LoadingController, private menu: MenuController, public navCtrl: NavController) {
+    this.forgotForm = formBuilder.group({
+      email: ['', Validators.required]
     });
   }
 
   ionViewDidLoad() {
     console.log('Hello ForgotPasswordPage');
+  }
+
+  showLoader() {
+    this.loading = this.loadingCtrl.create({
+      content: 'Authenticating...'
+    });
+    this.loading.present();
   }
 
   ionViewDidEnter() {
@@ -39,8 +48,44 @@ export class ForgotPasswordPage {
     this.menu.enable(true);
   }
 
+  presentLoading(message, title) {
+    const loading = this.loadingCtrl.create({
+      duration: 10
+    });
+
+    loading.onDidDismiss(() => {
+      const alert = this.alertCtrl.create({
+        title: title,
+        subTitle: message,
+        buttons: ['Dismiss']
+      });
+      alert.present();
+    });
+
+    loading.present();
+  }
+
   doForgotPassword() {
-    console.log('Forgot password clicked');
+    if (!this.forgotForm.valid) {
+      console.log('Invalid or empty data');
+      this.presentLoading('Email cannot be empty', 'Error')
+    }else{
+      console.log(this.forgotForm.value);
+      this.showLoader();
+
+      this.authProvider.forgot(this.forgotForm.value.email).then((result) => {
+        this.loading.dismiss();
+        console.log(result)
+        // this.presentLoading('Email cannot be empty', 'Error')
+        
+      }, (err) => {
+        this.loading.dismiss();
+        console.log(err)
+        this.presentLoading('The credentials do not match our records', 'Error');
+      });
+
+      
+    }
   }
 
   openLogin(){

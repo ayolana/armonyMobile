@@ -16,6 +16,7 @@ export class Homev1Page {
     //Main Menu
     this.pages = PAGES;
   }
+  
 
   showList(pages) {   
     this.navCtrl.setRoot(pages.page);
