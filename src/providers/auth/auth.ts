@@ -38,6 +38,11 @@ export class AuthProvider {
     return this.storage.set(STORAGE_KEY, user);
   }
 
+  logOut() {
+    console.log('Removed User from App Storage');
+    return this.storage.remove(STORAGE_KEY);
+  }
+
   getConfigData() {
     return new Promise(resolve => {
       this.http.get(SERVER_URL.getNormal)

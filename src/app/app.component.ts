@@ -1,6 +1,6 @@
 
 import { Component, ViewChild } from '@angular/core';
-import { Events, Config, AlertController, Platform, MenuController, Nav } from 'ionic-angular';
+import { Events, Config, App, AlertController, Platform, MenuController, Nav } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Push, PushObject, PushOptions } from '@ionic-native/push';
@@ -10,6 +10,8 @@ import { AppState, PAGES } from './global.setting';
 import { Subject } from 'rxjs';
 import { TranslateService } from '@ngx-translate/core';
 import { FirebaseAuthProvider } from '../providers/firebase/firebase-auth';
+import { AuthProvider } from '../providers/auth/auth';
+// import { AuthPage } from '../pages/auth/auth';
 
 @Component({
   templateUrl: 'app.html'
@@ -31,11 +33,13 @@ export class MyApp {
     public statusBar: StatusBar,
     public splashScreen: SplashScreen,
     public push: Push,
+    public app: App,
     public global: AppState,
     public alertCtrl: AlertController,
     public menuCtrl: MenuController,
     public translate:TranslateService,
     public config:Config,
+    public authProvider: AuthProvider,
     // public navCtrl: NavController, 
     public fireAuthService:FirebaseAuthProvider,
   ) {
@@ -115,12 +119,15 @@ export class MyApp {
   openPage(pages) {
     // close the menu when clicking a link from the menu
     this.menu.close();
+    console.log(pages)
+    console.log(pages.page)
     // navigate to the new page if it is not the current page
     this.nav.setRoot(pages.page);
     this.activePage.next(pages);
   }
 
-  doLogout() {
+  doLogout(page) {
+    console.log('doing logout')
     let confirm = this.alertCtrl.create({
       title: 'Logout',
       message: 'Are you sure to logout',
@@ -134,6 +141,21 @@ export class MyApp {
         {
           text: 'Yes',
           handler: () => {
+
+            this.authProvider.logOut().then((result) => {
+              // let nav = this.app.getRootNavById();
+              // console.log(nav)
+              // nav.setRoot('AuthPage');
+              this.menu.close();
+              // navigate to the new page if it is not the current page
+              this.nav.setRoot(page);
+              // this.activePage.next('AuthPage');
+              // this.nav.setRoot('Homev1Page')
+              
+            }, (err) => {
+              console.log(err)
+            });
+
             this.fireAuthService.doLogout()
             .subscribe(allowed => {
               console.log(allowed);

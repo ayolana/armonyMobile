@@ -28,11 +28,11 @@ export class FlashComponent {
 
   }
 
-  private active: boolean = false;
-  private message: string = '';
+  public active: boolean = false;
+  public message: string = '';
   private duration: number;
   private timeout;
-  private activeClass = 'secondary';
+  public activeClass = 'secondary';
 
   constructor(private flashProvider: FlashProvider) {
 

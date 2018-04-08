@@ -30,6 +30,7 @@ export class AuthPage {
   coop_details: any;
   data: any;
   loading: any;
+  isLogin: any;
   imageUrl: String;
   private login: FormGroup;
   loginData = { username: '', password: '' };
@@ -48,6 +49,7 @@ export class AuthPage {
       Validators.required])]
     });
 
+    this.isLogin = true;
     this.settings = this.authProvider.getConfigData()
       .then(
         data => {
@@ -133,10 +135,7 @@ export class AuthPage {
         this.loading.dismiss();
         this.data = result;
         this.authProvider.storeUser(this.data.user).then(storedUser => {
-          // console.log('StoredUser :' + storedUser)
-          // this.navCtrl.push('Homev1Page');
           this.navCtrl.setRoot('Homev1Page')
-
         })
       }, (err) => {
         this.loading.dismiss();

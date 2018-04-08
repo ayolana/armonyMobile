@@ -76,7 +76,8 @@ export class ForgotPasswordPage {
 
       this.authProvider.forgot(this.forgotForm.value.email).then((result) => {
         this.loading.dismiss();
-        console.log(result)
+        // console.log(result)
+        this.flashProvider.show('Reset Password instructions has been sent to your email.', 4000, 'success');
         // this.presentLoading('Email cannot be empty', 'Error')
         
       }, (err) => {

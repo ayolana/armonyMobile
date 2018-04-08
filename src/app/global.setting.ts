@@ -129,7 +129,6 @@ export const PAGES = [
     { icon: 'person', title: 'Profile', page: 'ProfileListPage', active: false, },
     { icon: 'film', title: 'Slides', page: 'SlidesListPage', active: false, },
     { icon: 'settings', title: 'Setting', page: 'SettingListPage', active: false },
-    { icon: 'logout', title: 'Logout', page: 'ProfileSettingsPage', active: false },
 ];
 
 //Main Menu Accordion, Next Update
