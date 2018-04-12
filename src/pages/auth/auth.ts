@@ -73,6 +73,7 @@ export class AuthPage {
 
   ionViewDidEnter() {
     // the root left menu should be disabled on this page
+    this.menu.close();
     this.menu.enable(false);
   }
 

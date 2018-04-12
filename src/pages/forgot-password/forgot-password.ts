@@ -92,7 +92,8 @@ export class ForgotPasswordPage {
 
   openLogin(){
     console.log('redirecting to login page')
-    this.navCtrl.push('AuthPage');
+    // this.navCtrl.push('AuthPage');
+    this.navCtrl.setRoot('AuthPage')
   }
 
  

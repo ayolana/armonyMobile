@@ -148,8 +148,10 @@ export class MyApp {
               // nav.setRoot('AuthPage');
               this.menu.close();
               // navigate to the new page if it is not the current page
-              this.nav.setRoot(page);
+              this.nav.push(page);
+              
               // this.activePage.next('AuthPage');
+
               // this.nav.setRoot('Homev1Page')
               
             }, (err) => {
