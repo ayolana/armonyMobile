@@ -107,6 +107,13 @@ export const LISTMENUSETTING = [
     { title: 'Theme', component: 'ThemingPage' },
 ];
 
+export const LISTMENUCONTRIBUTIONS = [
+    { title: 'History', component: 'ContributionsHistoryPage' },
+    { title: 'Deposit', component: 'ContributionDeposit' },
+    { title: 'Withdrawal', component: 'ContributionWithdrawal' },
+    { title: 'Reschedule', component: 'ContributionReschedule' },
+];
+
 export const LISTAVAILABLELANGUAGE = [
     { title: 'English', value: 'en' },
     { title: 'France', value: 'fr' },
@@ -118,6 +125,7 @@ export const LISTAVAILABLELANGUAGE = [
 //Main Menu1
 export const PAGES = [
     { icon: 'apps', title: 'Home', page: 'HomeListPage', active: true, },
+    { icon: 'cube', title: 'Contributions', page: 'ContributionsListPage', active: false, },
     { icon: 'cube', title: 'Components', page: 'ComponentListPage', active: false, },
     { icon: 'paper', title: 'CRUD', page: 'CrudListPage', active: false, },
     { icon: 'document', title: 'Forms', page: 'FormListPage', active: false, },
@@ -134,6 +142,7 @@ export const PAGES = [
 //Main Menu Accordion, Next Update
 export const ACCORDIONMENU = [
     { icon: 'apps', title: 'Home', children: LISTMENUHOME, active: true, },
+    { icon: 'contributions', title: 'Contributions', children: LISTMENUSETTING, active: false },
     { icon: 'cube', title: 'Components', children: LISTMENUCOMPONENT, active: false, },
     { icon: 'paper', title: 'CRUD', children: LISTMENUCRUD, active: false, },
     { icon: 'document', title: 'Forms', children: LISTMENUFORM, active: false, },

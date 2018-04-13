@@ -11,6 +11,7 @@ const SERVER_URL: any = {
 };
 
 const STORAGE_KEY = 'authUser';
+const AUTH_TOKEN = 'authToken';
 
 /*
   Generated class for the AuthProvider provider.
@@ -33,9 +34,12 @@ export class AuthProvider {
   //   return this.http.get('https://swapi.co/api/films');
   // }
 
-  storeUser(user) {
+  storeUser(user, token) {
     console.log('Stored User');
-    return this.storage.set(STORAGE_KEY, user);
+    console.log('Storing TOken :'+token);
+    console.log(token);
+    this.storage.set('authUser', user);
+    return this.storage.set('authToken', token);
   }
 
   logOut() {

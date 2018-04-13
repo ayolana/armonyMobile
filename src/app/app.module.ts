@@ -9,6 +9,7 @@ import { IonicStorageModule } from '@ionic/storage';
 import { StoreProvider } from '../providers/store/store';
 import { FlashProvider } from '../providers/flash/flash';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ContributionProvider } from '../providers/contribution/contribution';
 
 // this is the magic wand
 enableProdMode();
@@ -35,6 +36,7 @@ enableProdMode();
     NATIVES,
     StoreProvider,
     FlashProvider,
+    ContributionProvider,
   ]
 })
 export class AppModule {}

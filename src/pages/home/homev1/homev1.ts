@@ -10,9 +10,10 @@ import { PAGES } from '../../../app/global.setting';
 export class Homev1Page {
 
   pages:any[];
+  rootPage: any;
 
   constructor( public navCtrl: NavController ) {
-    
+    this.rootPage = 'Homev1Page';
     //Main Menu
     this.pages = PAGES;
   }

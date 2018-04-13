@@ -5,6 +5,8 @@ import { Observable } from 'rxjs/Observable';
 import { HttpClient } from '@angular/common/http';
 import { AuthProvider } from '../../providers/auth/auth';
 import { ConstantVariable } from "../../app/constant-variable";
+import { FlashProvider } from '../../providers/flash/flash';
+
 
 const SERVER_URL: any = {
   getNormal: ConstantVariable.APIURL + 'auth/config/settings',
@@ -39,6 +41,7 @@ export class AuthPage {
               public navCtrl: NavController,
               public navParams: NavParams,
               private menu: MenuController,
+              private flashProvider: FlashProvider,
               public alertCtrl: AlertController,
               public httpClient: HttpClient,
               public loadingCtrl: LoadingController,
@@ -117,8 +120,6 @@ export class AuthPage {
   }
 
   doLogin() {
-    console.log(this.login)
-    console.log(this.login.value)
 
     if (!this.login.valid) {
       console.log('Invalid or empty data');
@@ -135,13 +136,13 @@ export class AuthPage {
       this.authProvider.login(this.login.value).then((result) => {
         this.loading.dismiss();
         this.data = result;
-        this.authProvider.storeUser(this.data.user).then(storedUser => {
+        this.authProvider.storeUser(this.data.user, this.data.token).then(storedUser => {
           this.navCtrl.setRoot('Homev1Page')
         })
       }, (err) => {
         this.loading.dismiss();
         console.log(err)
-        this.presentLoading('The credentials do not match our records', 'Error');
+        this.flashProvider.show('The credentials do not match our records!', 4000, 'danger');
       });
     }
   }

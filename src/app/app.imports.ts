@@ -63,14 +63,13 @@ import { Autosize } from '../components/autosize/autosize';
 //COMPONENTS
 import { Timer } from '../components/countdown-timer/timer';
 import { TimerProgress } from '../components/timer-progress/timer-progress';
-import { ExpandableHeader } from '../components/expandable-header/expandable-header';
 import { FlashCardComponent } from '../components/flash-card/flash-card';
 import { FlashComponent } from '../components/flash/flash';
 import { TimeBarComponent } from '../components/time-bar/time-bar';
 import { TimelineTimeComponent, TimelineComponent, TimelineItemComponent } from '../components/timeline/timeline';
-
 //PIPES
 import { CapitalizePipe } from '../pipes/capitalize.pipe';
+// import { ExpandableHeader } from '../components/expandable-header/expandable-header';
 
 export function createTranslateLoader(http: Http) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -132,7 +131,7 @@ export const COMPONENTS = [
     Timer,
     TimerProgress,
     Timer,
-    ExpandableHeader,
+    // ExpandableHeader,
     FlashCardComponent,
     FlashComponent,
     TimeBarComponent,

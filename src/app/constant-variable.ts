@@ -1,7 +1,8 @@
 export const ConstantVariable:any = {
     //URL API
     // APIURL: "http://www.ionicpremium.com/ionium2/api/",
-    APIURL: "http://localhost/codegate/armony/public_html/api/",
+    // APIURL: "http://localhost/codegate/armony/public_html/api/",
+    APIURL: "http://192.168.1.33/codegate/armony/public_html/api/",
     // APIURL: "http://35.178.158.53/api/public_html/api/",
     IMAGEURL: "http://www.mutual.ecowas.int/uploads/",
     
